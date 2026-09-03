@@ -18,7 +18,7 @@ const ALLOW_ORIGINS = new Set([
   'http://localhost:5173',
 ]);
 
-console.log('[DEBUG] DATABASE_URL:', process.env.DATABASE_URL?.slice(0, 30));
+console.log('[DEBUG] DATABASE_URL set:', Boolean(process.env.DATABASE_URL));
 
 app.use(cors({
   origin: (origin, cb) => {
@@ -56,8 +56,12 @@ const CARDS_CDN = process.env.CARDS_CDN || 'https://pub-9e063c0641df4849b7460815
 console.log('[Export] Using CARDS_CDN:', CARDS_CDN);
 
 /* ===================== 4) PostgreSQL 連線 ===================== */
+if (!process.env.DATABASE_URL) {
+  throw new Error('DATABASE_URL environment variable is required');
+}
+
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL || 'postgresql://postgres:zpUNdxJLHVpaFeQPtXuHWjMIhOQTfoLM@ballast.proxy.rlwy.net:27575/railway',
+  connectionString: process.env.DATABASE_URL,
   ssl: { rejectUnauthorized: false },
 });
 
