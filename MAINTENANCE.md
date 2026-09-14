@@ -21,6 +21,16 @@
 3. **網址銜接**：目前網站掛在 `tetsunekko.github.io/holotcgtw/`（來自舊 `holotcgtw` repo 的 Pages）。`holotcgtw_online` 這個名字是暫時的（改名當下 `holotcgtw` 這個名字還被舊 repo 占用，不能重複）。等舊 `holotcgtw` repo 真的刪掉之後，可以考慮把 `holotcgtw_online` 再改名回 `holotcgtw`，把原本的網址拿回來；如果決定不搶回原網址，就需要在新 repo 設定 GitHub Pages 部署（目前 Pages 是用 `gh-pages` 分支跑的，`deploy.sh` 是現有的部署腳本，需要改成部署進自己的 repo 而不是推去外部的 `holotcgtw`）
 4. 確認上述都完成後，才把這整段待辦刪掉
 
+## 🖥️ 本機開發環境筆記（2026-09-14，系統碟重灌後補記）
+
+系統碟重灌後，本機是空的，以下是重新跑起來時踩過的坑：
+
+- **Node.js 完全沒裝**，要先裝（這台機器用 `winget install -e --id OpenJS.NodeJS.LTS`）。裝完新開的終端機才會吃到 PATH。
+- 前端啟動：`cd client && npm install && npm run dev`，跑在 `http://localhost:5173/holotcgtw/`。
+  `predev`/`prebuild` 會自動跑 `build:index` 重建 `imageIndex.json`——這個檔案內容通常不會真的變，只是換行符號（LF/CRLF）會被標記成有改動，**不用真的 commit 這個 diff**，`git restore` 掉即可。
+- **前端預設打正式站 API**：`client/.env` 的 `VITE_API_BASE` 指向 Railway 正式站，本機開發模式下存牌組代碼、匯入 decklog 動到的都是**真實正式站資料庫**，不是本機隔離環境。要跑完全本機後端才需要另外準備一組 `DATABASE_URL`（見下方）。
+- 後端（`deck-api-server/deck-api-server`）沒有 `DATABASE_URL` 環境變數就會直接噴錯拒絕啟動（2026-09-03 移除了寫死密碼的 fallback，見上方 commit ac191145），要在本機跑後端得自己設一組。
+- 沒有安裝 `chromium-cli`，要用瀏覽器驗證畫面時改用 Playwright（`npm install playwright` + `npx playwright install chromium`），寫一支簡單腳本 `page.goto()` + `screenshot()` 就夠。
 
 ## 官方卡圖自動同步工具（2026-07-03 新增，2026-08-18 補 fetch-set.cjs）
 
