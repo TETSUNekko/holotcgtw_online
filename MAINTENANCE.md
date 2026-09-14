@@ -4,7 +4,7 @@
 
 本專案原本的 GitHub repo `deck-api-server` 已改名為 **`holotcgtw_online`**
 （https://github.com/TETSUNekko/holotcgtw_online）。本機這份資料夾的 `origin` 已同步改指向新網址，
-資料夾本身還沒改名（還是 `deck-api-server`，暫不影響使用，之後想改再改）。
+本機資料夾也已改名為 `holotcgtw_online`（2026-09-15 確認）。
 
 背景：盤點發現 GitHub 上有 4 個 holotcg 相關 repo，其中 3 個是廢棄舊版：
 
@@ -30,7 +30,34 @@
   `predev`/`prebuild` 會自動跑 `build:index` 重建 `imageIndex.json`——這個檔案內容通常不會真的變，只是換行符號（LF/CRLF）會被標記成有改動，**不用真的 commit 這個 diff**，`git restore` 掉即可。
 - **前端預設打正式站 API**：`client/.env` 的 `VITE_API_BASE` 指向 Railway 正式站，本機開發模式下存牌組代碼、匯入 decklog 動到的都是**真實正式站資料庫**，不是本機隔離環境。要跑完全本機後端才需要另外準備一組 `DATABASE_URL`（見下方）。
 - 後端（`deck-api-server/deck-api-server`）沒有 `DATABASE_URL` 環境變數就會直接噴錯拒絕啟動（2026-09-03 移除了寫死密碼的 fallback，見上方 commit ac191145），要在本機跑後端得自己設一組。
-- 沒有安裝 `chromium-cli`，要用瀏覽器驗證畫面時改用 Playwright（`npm install playwright` + `npx playwright install chromium`），寫一支簡單腳本 `page.goto()` + `screenshot()` 就夠。
+- 沒有安裝 `chromium-cli`，要用瀏覽器驗證畫面時改用 Playwright，寫一支簡單腳本 `page.goto()` + `screenshot()` 就夠。
+- **已安裝工具（2026-09-15）**：Node.js v22（`H:\code\Node.js`）、Git、ImageMagick 7.1.1（`D:\OPNW-Tool\ImageMagick-7.1.1-Q16`，已在 PATH）、GitHub CLI `gh`（首次使用要 `gh auth login`）、Railway CLI（`npm i -g @railway/cli`，首次使用要 `railway login` + 在 `deck-api-server` 底下 `railway link`）、Playwright（全域安裝，Chromium 已下載，不寫進專案 package.json）。
+- **後端 `npm install` 會卡在 `canvas` 編譯失敗**：舊的 `canvas` 套件 2026-04 已被 `@napi-rs/canvas` 取代（commit 87331e99），但當時沒從 package.json 移掉，Node 22 在 Windows 沒有預編譯檔。移除前暫時用 `npm install --ignore-scripts` 繞過。注意 **puppeteer 不能移**，`decklog-scraper.cjs`（匯入 decklog）要用。
+
+## ☁️ Railway 正式站排錯（2026-09-15 事故紀錄）
+
+**症狀**：網站輸入/輸出代碼、匯出圖片全部跳「無法讀取該代碼：Failed to fetch」，但 Railway 面板顯示 `production · 1/1 service online`。
+
+**根因**：commit ac191145 移除了 `server.js` 寫死的資料庫網址 fallback，而 Railway 上**從來沒設過 `DATABASE_URL`**（以前一直靠寫死的那組在跑）。部署到新版後程式一啟動就拋錯結束。
+
+**教訓與檢查方式**：
+- **面板顯示 online 不代表程式活著**。程式死掉後請求只會到 Railway 閘道，回 502「Application failed to respond」，不帶 CORS header，所以瀏覽器只顯示 `Failed to fetch`；而且**不會留下任何請求 log**。
+- 快速確認：`curl https://deck-api-server-production.up.railway.app/healthz`，正常要回 `{"ok":true,...}`，回 502 就是後端沒在跑。
+- 看原因：Deck API Server → 服務 → Deployments → 最新一筆 **View logs** → **Deploy Logs**（不是 Build Logs）。正常啟動要看到：
+  ```
+  [DEBUG] DATABASE_URL set: true
+  [DB] Table ready
+  Deck server running on http://0.0.0.0:...
+  ```
+- `start()` 會**先等資料庫連上才 listen**，而 `pg` 預設沒有連線逾時。若 log 停在 `[DB] Table ready` 之前沒有報錯，就是卡在資料庫連線。
+
+**`DATABASE_URL` 的設定位置**：
+- 設在 **Deck API Server** 專案的服務 → **Variables**
+- 值要用 **Deck Codes Database** 專案 Postgres 的 **`DATABASE_PUBLIC_URL`**——資料庫和 API 在**不同 Railway 專案**，內部網址連不到
+- 換資料庫密碼後要記得同步更新這個變數
+- ⚠️ 舊的資料庫密碼仍留在 git 歷史（ac191145 之前的 `server.js`），建議在 Postgres 重設密碼
+
+**不要再把資料庫網址寫死回程式碼**。
 
 ## 官方卡圖自動同步工具（2026-07-03 新增，2026-08-18 補 fetch-set.cjs）
 
