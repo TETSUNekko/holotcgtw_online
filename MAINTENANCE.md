@@ -1,5 +1,27 @@
 # HoloTCG Online 維護備忘錄
 
+## ⚠️ 待辦：Repo 整併收尾（2026-09-14 建立）
+
+本專案原本的 GitHub repo `deck-api-server` 已改名為 **`holotcgtw_online`**
+（https://github.com/TETSUNekko/holotcgtw_online）。本機這份資料夾的 `origin` 已同步改指向新網址，
+資料夾本身還沒改名（還是 `deck-api-server`，暫不影響使用，之後想改再改）。
+
+背景：盤點發現 GitHub 上有 4 個 holotcg 相關 repo，其中 3 個是廢棄舊版：
+
+| Repo | 狀態 |
+|---|---|
+| `holotcgtw` | main 分支停在 2025-06-03（缺一堆新彈資料），但 `gh-pages` 分支目前仍是 `tetsunekko.github.io/holotcgtw` 實際服務來源 |
+| `HoloTCG_UI` | Unity 專案，2 個 commit，只有 4 張卡圖當範例素材，完全被目前的 web 版取代 |
+| `deckcode-server` | 陽春原型後端（純 JSON 檔存讀），功能已完全被本專案的 `deck-api-server/server.js` 取代 |
+
+**執行時機**：等新網站（`holotcgtw_online` 這個 repo）部署好、確認程式碼跑起來都正常之後，再做以下清理，**不要現在做**：
+
+1. GitHub 上刪除 3 個舊 repo：`holotcgtw`、`HoloTCG_UI`、`deckcode-server`
+2. 本機同步刪掉對應的 3 個資料夾：`d:/GitHub/holotcgtw`、`d:/GitHub/HoloTCG_UI`、`d:/GitHub/deckcode-server`
+3. **網址銜接**：目前網站掛在 `tetsunekko.github.io/holotcgtw/`（來自舊 `holotcgtw` repo 的 Pages）。`holotcgtw_online` 這個名字是暫時的（改名當下 `holotcgtw` 這個名字還被舊 repo 占用，不能重複）。等舊 `holotcgtw` repo 真的刪掉之後，可以考慮把 `holotcgtw_online` 再改名回 `holotcgtw`，把原本的網址拿回來；如果決定不搶回原網址，就需要在新 repo 設定 GitHub Pages 部署（目前 Pages 是用 `gh-pages` 分支跑的，`deploy.sh` 是現有的部署腳本，需要改成部署進自己的 repo 而不是推去外部的 `holotcgtw`）
+4. 確認上述都完成後，才把這整段待辦刪掉
+
+
 ## 官方卡圖自動同步工具（2026-07-03 新增，2026-08-18 補 fetch-set.cjs）
 
 專案根目錄有數支配套腳本，取代過去手動從官網一張張下載比對的流程。
