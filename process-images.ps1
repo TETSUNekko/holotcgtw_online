@@ -19,6 +19,10 @@ param(
     [int]$Width           = 1120,
     [int]$Height          = 1080,
     [switch]$UsePrefix,
+    [int]$OutHeight     = 900,   # 輸出高度：畫面最多顯示 620px，900 留給高 DPI 餘裕
+
+    [int]$Quality       = 80,    # webp 品質：實測 80 在顯示尺寸下與原檔無差異
+
     [switch]$DryRun
 )
 
@@ -71,7 +75,7 @@ foreach ($img in $images) {
     Write-Host ("[{0,3}] {1} ➜ {2}\{3}.webp" -f $count, $img.Name, $shortDir, $outName)
 
     if (-not $DryRun) {
-        & $magick "$($img.FullName)" -gravity East -crop "${Width}x${Height}+0+0" +repage "$outputPath"
+        & $magick "$($img.FullName)" -gravity East -crop "${Width}x${Height}+0+0" +repage -resize "x$OutHeight" -quality $Quality "$outputPath"
     }
 
     if (-not $routed.ContainsKey($shortDir)) { $routed[$shortDir] = 0 }

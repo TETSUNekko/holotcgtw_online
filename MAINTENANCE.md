@@ -190,6 +190,21 @@ foreach ($d in Get-ChildItem "D:\Download\HOLO-TCG翻譯" -Directory) {
 - `hPR-002.jpg` 在 `PR` 和 `hSD05` 兩個來源資料夾各有一份，都輸出到 `hPR-trans/hPR-002.webp`，
   後跑的會覆蓋前者（資料夾按名稱排序，`PR` 在最後）。所以來源 1526 張 → 輸出 1525 張是正常的。
 
+**翻譯圖的輸出規格：高 900px、webp 品質 80**（2026-09-20 優化，已寫進腳本預設值）。
+原本沒指定尺寸與品質，直接輸出 1120x1080 原尺寸＋沿用來源 JPG 的高品質，單張平均 320 KB、
+全站 1612 張共 504 MB，放大檢視要等 1.2 秒。改成 900px/80 後平均 106 KB、全站 166 MB（-67%）。
+
+- **為什麼是 900px**：畫面最多只顯示 620px 高（見下方 IMG_H），900px 是留給高 DPI 螢幕與
+  系統縮放 125～150% 的餘裕。實測把 900/80 與原檔都縮到顯示尺寸再放大 200% 比對，文字沒有差別。
+- 壓縮比較（單張）：原檔 276 KB／1080px 品質80 = 141 KB／**900px 品質80 = 123 KB**／760px 品質80 = 105 KB
+- 改動在 `process-images.ps1` 的 `-OutHeight`（預設 900）與 `-Quality`（預設 80）參數，
+  以後跑批次不必再指定。要重壓既有檔案：
+  ```bash
+  magick in.webp -resize x900 -quality 80 out.webp
+  ```
+- [DeckBuilder.jsx](client/src/components/DeckBuilder/DeckBuilder.jsx) 另外會**預載上一張／下一張**的
+  卡圖與翻譯圖，用左右箭頭翻卡不必重新等下載。
+
 **卡圖與翻譯圖的尺寸差很多**：卡圖 400x559（直式），翻譯圖裁切後是 1120x1080（接近正方形）。
 [ZoomModal.jsx](client/src/components/DeckBuilder/ZoomModal.jsx) 桌面版原本只給 `maxHeight`，
 卡圖因此永遠停在原始的 559px 不會放大，翻譯圖卻被 `72vh` 放大到比卡圖還高，看起來一大一小。

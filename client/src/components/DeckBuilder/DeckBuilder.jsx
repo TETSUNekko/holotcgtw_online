@@ -202,6 +202,21 @@ function DeckBuilder() {
       setZoomIndex(newIndex);
     }
   }, [zoomIndex, filteredCards]);
+  // 預載相鄰卡片的卡圖與翻譯圖：翻譯圖比卡圖大不少，先抓起來放瀏覽器快取，
+  // 按左右箭頭翻卡時就不會再等一次下載。
+  useEffect(() => {
+    if (zoomIndex == null) return;
+    const base = import.meta.env.BASE_URL || "/";
+    for (const d of [1, -1]) {
+      const n = filteredCards[zoomIndex + d];
+      if (!n?.key) continue;
+      const urls = [webpUrlFromKey(n.key)];
+      const e = parseKey(n.key);
+      if (e) urls.push(`${base}webpcards/${e.folder}-trans/${e.id}.webp`);
+      for (const u of urls) { if (u) new Image().src = u; }
+    }
+  }, [zoomIndex, filteredCards]);
+
 
   // ── 匯出代碼 ─────────────────────────────────────────────
   const groupByCard = useCallback((cards) => {
