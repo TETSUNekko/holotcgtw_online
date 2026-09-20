@@ -212,10 +212,20 @@ foreach ($d in Get-ChildItem "D:\Download\HOLO-TCG翻譯" -Directory) {
    imageFolder: energy/／versions），不要留在 `cardList_hBP09.json` 裡——`fetch-set.cjs` 會把它們
    一起產出來，要手動搬走。
 
-⚠️ **待處理：官方有、本站缺的 8 張エール卡**（2026-09-20 對帳發現，**與 hBP09 無關，是既有缺漏**）：
-`hY01-014`、`hY02-012`、`hY03-016`、`hY04-013`、`hY05-011`、`hY06-011`、`hY03-018`、`hY04-015`。
-官方卡號共 1388 個（扣掉 1 筆「デッキ構築ルール」說明頁不算卡），本站 1379 個，差的就是這 8 張。
-快取 `.official-cards.json` 沒存卡圖路徑，要先確認它們屬於哪個商品資料夾才能下載。
+✅ **既有缺漏的 8 張エール卡已補齊（2026-09-20）**：對帳發現官方 1388 個卡號、本站只有 1379 個。
+差的 8 張是 `hY01-014`／`hY02-012`／`hY03-016`／`hY04-013`／`hY05-011`／`hY06-011`（官方圖在
+**hEB01** 資料夾，`_SY` 版）和 `hY03-018`／`hY04-015`（在 **hPR**，`_P` 版），都已下載進 `energy/`
+並補進 `cardList_hY.json`。現在本站 1387 個卡號＝官方全部（官方那 1388 個裡有 1 筆是
+「デッキ構築ルール」說明頁，不是卡）。
+
+**查某張卡屬於哪個商品資料夾**（快取 `.official-cards.json` 不存圖片路徑）：
+```bash
+ID=hY01-014
+BASE=https://hololive-official-cardgame.com
+Q="attribute%5B0%5D=all&expansion_name=&card_kind%5B0%5D=all&rare%5B0%5D=all&bloom_level%5B0%5D=all&parallel%5B0%5D=all&view=text&page=1"
+curl -s -H "Referer: $BASE/" "$BASE/cardlist/cardsearch/?keyword=$ID&$Q" |
+  grep -oE "images/cardlist/[A-Za-z0-9_]+/$ID[A-Za-z0-9_]*\.png" | sort -u
+```
 
 **エクストラ卡清單**：`node audit-cards.cjs --refetch` 會自動更新，hBP09 上線後 154 → 160 張。
 

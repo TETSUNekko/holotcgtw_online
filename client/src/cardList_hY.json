@@ -77,6 +77,13 @@
     "versions": ["_SY.png"]
   },
   {
+    "id": "hY01-014",
+    "type": "Energy",
+    "color": ["white"],
+    "imageFolder": "energy/",
+    "versions": ["_SY.png"]
+  },
+  {
     "id": "hY01-015",
     "type": "Energy",
     "color": ["white"],
@@ -148,6 +155,13 @@
   },
   {
     "id": "hY02-011",
+    "type": "Energy",
+    "color": ["green"],
+    "imageFolder": "energy/",
+    "versions": ["_SY.png"]
+  },
+  {
+    "id": "hY02-012",
     "type": "Energy",
     "color": ["green"],
     "imageFolder": "energy/",
@@ -259,11 +273,25 @@
     "versions": ["_SY.png"]
   },
   {
+    "id": "hY03-016",
+    "type": "Energy",
+    "color": ["red"],
+    "imageFolder": "energy/",
+    "versions": ["_SY.png"]
+  },
+  {
     "id": "hY03-017",
     "type": "Energy",
     "color": ["red"],
     "imageFolder": "energy/",
     "versions": ["_SY.png"]
+  },
+  {
+    "id": "hY03-018",
+    "type": "Energy",
+    "color": ["red"],
+    "imageFolder": "energy/",
+    "versions": ["_P.png"]
   },
   {
     "id": "hY04-001",
@@ -343,11 +371,25 @@
     "versions": ["_SY.png"]
   },
   {
+    "id": "hY04-013",
+    "type": "Energy",
+    "color": ["blue"],
+    "imageFolder": "energy/",
+    "versions": ["_SY.png"]
+  },
+  {
     "id": "hY04-014",
     "type": "Energy",
     "color": ["blue"],
     "imageFolder": "energy/",
     "versions": ["_SY.png"]
+  },
+  {
+    "id": "hY04-015",
+    "type": "Energy",
+    "color": ["blue"],
+    "imageFolder": "energy/",
+    "versions": ["_P.png"]
   },
   {
     "id": "hY05-001",
@@ -407,6 +449,13 @@
   },
   {
     "id": "hY05-010",
+    "type": "Energy",
+    "color": ["purple"],
+    "imageFolder": "energy/",
+    "versions": ["_SY.png"]
+  },
+  {
+    "id": "hY05-011",
     "type": "Energy",
     "color": ["purple"],
     "imageFolder": "energy/",
@@ -477,6 +526,13 @@
   },
   {
     "id": "hY06-010",
+    "type": "Energy",
+    "color": ["yellow"],
+    "imageFolder": "energy/",
+    "versions": ["_SY.png"]
+  },
+  {
+    "id": "hY06-011",
     "type": "Energy",
     "color": ["yellow"],
     "imageFolder": "energy/",

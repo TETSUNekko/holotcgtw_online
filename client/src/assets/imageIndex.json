@@ -19,6 +19,7 @@
     "hY01-010_SY@energy": "energy/hY01-010_SY.webp",
     "hY01-012_SY@energy": "energy/hY01-012_SY.webp",
     "hY01-013_SY@energy": "energy/hY01-013_SY.webp",
+    "hY01-014_SY@energy": "energy/hY01-014_SY.webp",
     "hY01-015_SY@energy": "energy/hY01-015_SY.webp",
     "hY02-001_C@energy": "energy/hY02-001_C.webp",
     "hY02-002_SY@energy": "energy/hY02-002_SY.webp",
@@ -30,6 +31,7 @@
     "hY02-008_SY@energy": "energy/hY02-008_SY.webp",
     "hY02-010_SY@energy": "energy/hY02-010_SY.webp",
     "hY02-011_SY@energy": "energy/hY02-011_SY.webp",
+    "hY02-012_SY@energy": "energy/hY02-012_SY.webp",
     "hY02-013_SY@energy": "energy/hY02-013_SY.webp",
     "hY03-001_C@energy": "energy/hY03-001_C.webp",
     "hY03-002_SY@energy": "energy/hY03-002_SY.webp",
@@ -45,7 +47,9 @@
     "hY03-013_SY@energy": "energy/hY03-013_SY.webp",
     "hY03-014_SY@energy": "energy/hY03-014_SY.webp",
     "hY03-015_SY@energy": "energy/hY03-015_SY.webp",
+    "hY03-016_SY@energy": "energy/hY03-016_SY.webp",
     "hY03-017_SY@energy": "energy/hY03-017_SY.webp",
+    "hY03-018_P@energy": "energy/hY03-018_P.webp",
     "hY04-001_C@energy": "energy/hY04-001_C.webp",
     "hY04-002_SY@energy": "energy/hY04-002_SY.webp",
     "hY04-003_SY@energy": "energy/hY04-003_SY.webp",
@@ -57,7 +61,9 @@
     "hY04-010_SY@energy": "energy/hY04-010_SY.webp",
     "hY04-011_SY@energy": "energy/hY04-011_SY.webp",
     "hY04-012_SY@energy": "energy/hY04-012_SY.webp",
+    "hY04-013_SY@energy": "energy/hY04-013_SY.webp",
     "hY04-014_SY@energy": "energy/hY04-014_SY.webp",
+    "hY04-015_P@energy": "energy/hY04-015_P.webp",
     "hY05-001_C@energy": "energy/hY05-001_C.webp",
     "hY05-002_SY@energy": "energy/hY05-002_SY.webp",
     "hY05-003_SY@energy": "energy/hY05-003_SY.webp",
@@ -67,6 +73,7 @@
     "hY05-008_SY@energy": "energy/hY05-008_SY.webp",
     "hY05-009_SY@energy": "energy/hY05-009_SY.webp",
     "hY05-010_SY@energy": "energy/hY05-010_SY.webp",
+    "hY05-011_SY@energy": "energy/hY05-011_SY.webp",
     "hY05-012_SY@energy": "energy/hY05-012_SY.webp",
     "hY06-001_C@energy": "energy/hY06-001_C.webp",
     "hY06-002_SY@energy": "energy/hY06-002_SY.webp",
@@ -77,6 +84,7 @@
     "hY06-007_SY@energy": "energy/hY06-007_SY.webp",
     "hY06-009_SY@energy": "energy/hY06-009_SY.webp",
     "hY06-010_SY@energy": "energy/hY06-010_SY.webp",
+    "hY06-011_SY@energy": "energy/hY06-011_SY.webp",
     "hY06-012_SY@energy": "energy/hY06-012_SY.webp",
     "hBD24-001_P@hBD24": "hBD24/hBD24-001_P.webp",
     "hBD24-002_P@hBD24": "hBD24/hBD24-002_P.webp",
@@ -3153,6 +3161,9 @@
     "hY01-013": [
       "_SY"
     ],
+    "hY01-014": [
+      "_SY"
+    ],
     "hY01-015": [
       "_SY"
     ],
@@ -3184,6 +3195,9 @@
       "_SY"
     ],
     "hY02-011": [
+      "_SY"
+    ],
+    "hY02-012": [
       "_SY"
     ],
     "hY02-013": [
@@ -3231,8 +3245,14 @@
     "hY03-015": [
       "_SY"
     ],
+    "hY03-016": [
+      "_SY"
+    ],
     "hY03-017": [
       "_SY"
+    ],
+    "hY03-018": [
+      "_P"
     ],
     "hY04-001": [
       "_C"
@@ -3267,8 +3287,14 @@
     "hY04-012": [
       "_SY"
     ],
+    "hY04-013": [
+      "_SY"
+    ],
     "hY04-014": [
       "_SY"
+    ],
+    "hY04-015": [
+      "_P"
     ],
     "hY05-001": [
       "_C"
@@ -3295,6 +3321,9 @@
       "_SY"
     ],
     "hY05-010": [
+      "_SY"
+    ],
+    "hY05-011": [
       "_SY"
     ],
     "hY05-012": [
@@ -3325,6 +3354,9 @@
       "_SY"
     ],
     "hY06-010": [
+      "_SY"
+    ],
+    "hY06-011": [
       "_SY"
     ],
     "hY06-012": [
