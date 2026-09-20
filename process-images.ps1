@@ -22,7 +22,7 @@ param(
     [switch]$DryRun
 )
 
-$magick = "C:\Program Files\ImageMagick-7.1.2-Q16-HDRI\magick.exe"
+$magick = if ($env:MAGICK) { $env:MAGICK } else { "magick" }  # 預設用 PATH 上的 magick，路徑不同可用環境變數 MAGICK 指定
 
 if (-not $AutoRoute -and -not (Test-Path $OutputFolder)) {
     New-Item -ItemType Directory -Path $OutputFolder | Out-Null

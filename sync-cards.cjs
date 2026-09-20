@@ -10,7 +10,7 @@ const API = 'https://decklog.bushiroad.com/system/app/api/search/9';
 const IMG_CDN = 'https://hololive-official-cardgame.com/wp-content/images/cardlist/';
 const WEBP_DIR = path.join(__dirname, 'client/public/webpcards');
 const NEW_DIR = path.join(__dirname, 'new_cards');
-const MAGICK = 'C:\\Program Files\\ImageMagick-7.1.2-Q16-HDRI\\magick.exe';
+const MAGICK = process.env.MAGICK || 'magick'; // 預設用 PATH 上的 magick，路徑不同可用環境變數 MAGICK 指定
 
 const DOWNLOAD = process.argv.includes('--download');
 

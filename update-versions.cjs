@@ -10,6 +10,7 @@ const FOLDER_JSON = {
   hBP01: 'cardList_hBP01.json', hBP02: 'cardList_hBP02.json', hBP03: 'cardList_hBP03.json',
   hBP04: 'cardList_hBP04.json', hBP05: 'cardList_hBP05.json', hBP06: 'cardList_hBP06.json',
   hBP07: 'cardList_hBP07.json', hBP08: 'cardList_hBP08.json',
+  hBP09: 'cardList_hBP09.json',
   hEB01: 'cardList_hEB01.json',
   hSD01: 'cardList_hSD01.json', hSD02: 'cardList_hSD02.json', hSD03: 'cardList_hSD03.json',
   hSD04: 'cardList_hSD04.json', hSD05: 'cardList_hSD05.json', hSD06: 'cardList_hSD06.json',

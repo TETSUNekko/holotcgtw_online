@@ -48,7 +48,7 @@
     "grade": "debut",
     "searchKeywords": ["ときのそら", "時乃空", "Tokino Sora"],
     "skillType": "",
-    "versions": ["_C_02.png"],
+    "versions": ["_C_02.png", "_HR.png"],
     "tags": ["JP", "0期生", "歌"],
     "effectType": ""
   },
@@ -62,7 +62,7 @@
     "grade": "1st",
     "searchKeywords": ["ベスティア・ゼータ", "維斯提亞·澤塔", "Vestia Zeta", "從debut開花的時候，從自己的牌組公開1張除了buzz以外並持有(#ID3)期生的debut成員或1st成員加入手牌，接著牌組洗牌"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["ID", "ID3期生"],
     "effectType": "Bloom"
   },
@@ -76,7 +76,7 @@
     "grade": "2nd",
     "searchKeywords": ["IRyS", "IRyS", "IRyS", "檢視自己的holo之力。從當中公開1張，加入手牌，接著從自己牌組上方1張化為holo之力", "自己持有#Promise的成員每有1張，這個藝能傷害+20"],
     "skillType": "",
-    "versions": ["_R_02.png"],
+    "versions": ["_R_02.png", "_SR_02.png"],
     "tags": ["EN", "Promise", "歌"],
     "effectType": "Collaboration"
   },
@@ -90,7 +90,7 @@
     "grade": "1st",
     "searchKeywords": ["白上フブキ", "白上吹雪", "Shirakami Fubuki", "從自己的牌組公開1張持有#白上的角色的卡片加入手牌，接著牌組洗牌"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["JP", "1期生", "Gamers", "獸耳", "畫"],
     "effectType": "Bloom"
   },
@@ -104,7 +104,7 @@
     "grade": "1st",
     "searchKeywords": ["白銀ノエル", "白銀諾艾爾", "Shirogane Noel", "從debut開花的時候，從自己的牌組公開1張持有#3期生的debut成員或1st成員或spot成員加入手牌，接著牌組洗牌"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["JP", "3期生", "酒"],
     "effectType": "Bloom"
   },
@@ -118,7 +118,7 @@
     "grade": "buzz",
     "searchKeywords": ["白銀ノエル", "白銀諾艾爾", "Shirogane Noel", "聯動位置限定", "自己的舞台除了這個成員以外持有#3期生的成員每有1人，這個藝能傷害+20，但是計算的人數最多4人"],
     "skillType": "",
-    "versions": ["_RR_02.png"],
+    "versions": ["_RR_02.png", "_SR_02.png", "_UR_02.png"],
     "tags": ["JP", "3期生", "酒"],
     "effectType": ""
   },
@@ -132,7 +132,7 @@
     "grade": "debut",
     "searchKeywords": ["博衣こより", "博衣小夜璃", "博衣可佑理", "Hakui Koyori"],
     "skillType": "",
-    "versions": ["_C_02.png"],
+    "versions": ["_C_02.png", "_HR.png"],
     "tags": ["JP", "秘密結社holoX", "獸耳"],
     "effectType": ""
   },
@@ -146,7 +146,7 @@
     "grade": "1st",
     "searchKeywords": ["博衣こより", "博衣小夜璃", "博衣可佑理", "Hakui Koyori"],
     "skillType": "",
-    "versions": ["_R_02.png"],
+    "versions": ["_R_02.png", "_SR_02.png"],
     "tags": ["JP", "秘密結社holoX", "獸耳"],
     "effectType": "Bloom"
   },
@@ -160,7 +160,7 @@
     "grade": "2nd",
     "searchKeywords": ["兔田ぺこら", "兔田佩可拉", "Usada Pekora"],
     "skillType": "",
-    "versions": ["_RR_02.png"],
+    "versions": ["_RR_02.png", "_SR_02.png", "_UR_02.png"],
     "tags": ["JP", "3期生", "獸耳"],
     "effectType": "Gift"
   },
@@ -174,7 +174,7 @@
     "grade": "1st",
     "searchKeywords": ["轟はじめ", "轟一", "Todoroki Hajime"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["DEV_IS", "ReGLOSS", "嬰兒"],
     "effectType": "Bloom"
   },
@@ -188,7 +188,7 @@
     "grade": "debut",
     "searchKeywords": ["兔田ぺこら", "兔田佩可拉", "Usada Pekora", "自己的主推成員是<兔田佩可拉>時，丟擲1次骰子:偶數時，從自己聲援牌組上方的1張，送進自己的成員裡"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["JP", "3期生", "獸耳"],
     "effectType": "Collaboration"
   },
@@ -202,7 +202,7 @@
     "grade": "1st",
     "searchKeywords": ["兔田ぺこら", "兔田佩可拉", "Usada Pekora", "從自己聲援牌組上方的1張卡，送進中央成員或聯動成員裡"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["JP", "3期生", "獸耳"],
     "effectType": "Bloom"
   },
@@ -216,7 +216,7 @@
     "grade": "1st",
     "searchKeywords": ["風真いろは", "風真伊呂波", "Kazama Iroha", "聯動位置限定", "對手成員的藝能，僅能選我方的聯動成員為對象(特殊傷害例外)", "從自己聲援牌組上方的1張卡，送進<風真伊呂波>以外持有#秘密結社holoX的成員裡"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["JP", "秘密結社holoX"],
     "effectType": "Gift"
   },
@@ -230,7 +230,7 @@
     "grade": "buzz",
     "searchKeywords": ["風真いろは", "風真伊呂波", "Kazama Iroha", "聯動位置限定", "這個成員每持有1張聲援，這個藝能傷害+20(最多5張)"],
     "skillType": "",
-    "versions": ["_RR_02.png"],
+    "versions": ["_RR_02.png", "_SR_02.png", "_UR_02.png"],
     "tags": ["JP", "秘密結社holoX"],
     "effectType": ""
   },
@@ -244,7 +244,7 @@
     "grade": "1st",
     "searchKeywords": ["アイラニ・イオフィフティーン", "艾拉妮·伊歐菲芙婷", "Airani Iofifteen", "從自己的聲援牌組上方的1張卡，送進自己的<艾拉妮·伊歐菲芙婷>以外持有#ID的成員裡"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["ID", "ID1期生", "畫"],
     "effectType": "Bloom"
   },
@@ -258,7 +258,7 @@
     "grade": "2nd",
     "searchKeywords": ["アイラニ・イオフィフティーン", "艾拉妮·伊歐菲芙婷", "Airani Iofifteen", "從自己存檔的聲援卡各1張，送進自己1~3名持有#ID的成員裡", "自己的舞台有<艾拉妮·伊歐菲芙婷>以外的#ID成員時，這個藝能傷害+50"],
     "skillType": "",
-    "versions": ["_R_02.png"],
+    "versions": ["_R_02.png", "_SR_02.png"],
     "tags": ["ID", "ID1期生", "畫"],
     "effectType": "Collaboration"
   },
@@ -272,7 +272,7 @@
     "grade": "1st",
     "searchKeywords": ["パヴォリア・レイネ", "帕沃莉亞·蕾內", "Pavolia Reine", "從自己的牌組公開1張Tatang加入手牌。接著牌組洗牌", "自己舞台上的聲援顏色有2種或以上時，這個藝能傷害+20"],
     "skillType": "",
-    "versions": ["_R_02.png"],
+    "versions": ["_R_02.png", "_SR_02.png"],
     "tags": ["ID", "ID2期生", "鳥", "畫"],
     "effectType": "Bloom"
   },
@@ -286,7 +286,7 @@
     "grade": "2nd",
     "searchKeywords": ["パヴォリア・レイネ", "帕沃莉亞·蕾內", "Pavolia Reine", "自己舞台上的聲援顏色每有1種，這個藝能傷害+20", "從自己的聲援牌組公開1張聲援，送進自己的成員裡，接著將聲援牌組洗牌"],
     "skillType": "",
-    "versions": ["_RR_02.png"],
+    "versions": ["_RR_02.png", "_SR_02.png", "_UR_02.png"],
     "tags": ["ID", "ID2期生", "鳥", "畫"],
     "effectType": "Bloom"
   },
@@ -300,7 +300,7 @@
     "grade": "1st",
     "searchKeywords": ["大神ミオ", "大神澪", "Ookami Mio", "從自己的聲援牌組公開1張與自己持有#Gamers成員相同顏色的聲援卡，送進自己的成員裡，接著將聲援牌組洗牌"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["JP", "Gamers", "獸耳", "料理"],
     "effectType": "Bloom"
   },
@@ -314,7 +314,7 @@
     "grade": "buzz",
     "searchKeywords": ["大神ミオ", "大神澪", "Ookami Mio", "可以將自己牌組上方1張存檔:被存檔的卡若為成員時，這個藝能傷害+20。若為支援卡時，這個藝能傷害+50"],
     "skillType": "",
-    "versions": ["_RR_02.png"],
+    "versions": ["_RR_02.png", "_SR_02.png", "_UR_02.png"],
     "tags": ["JP", "Gamers", "獸耳", "料理"],
     "effectType": ""
   },
@@ -328,7 +328,7 @@
     "grade": "buzz",
     "searchKeywords": ["兔田ぺこら", "兔田佩可拉", "Usada Pekora"],
     "skillType": "",
-    "versions": ["_R_02.png"],
+    "versions": ["_R_02.png", "_SR_02.png"],
     "tags": ["JP", "3期生", "獸耳"],
     "effectType": "Collaboration"
   },
@@ -342,7 +342,7 @@
     "grade": "1st",
     "searchKeywords": ["風真いろは", "風真伊呂波", "Kazama Iroha"],
     "skillType": "",
-    "versions": ["_C_02.png"],
+    "versions": ["_C_02.png", "_SR_02.png"],
     "tags": ["JP", "秘密結社holoX"],
     "effectType": "Bloom"
   },
@@ -356,7 +356,7 @@
     "grade": "1st",
     "searchKeywords": ["鷹嶺ルイ", "鷹嶺琉依", "Takane Rui", "從debut開花的時候，可以從自己1張手牌存檔:從自己的牌組抽2張"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["JP", "秘密結社holoX", "鳥", "酒"],
     "effectType": "Bloom"
   },
@@ -370,7 +370,7 @@
     "grade": "2nd",
     "searchKeywords": ["鷹嶺ルイ", "鷹嶺琉依", "Takane Rui", "將存檔裡持有#秘密結社holoX的成員1~2張返回手牌", "可以從自己手牌1~5張進行存檔:每存檔1張手牌，對手的中央成員或聯動成員當中的一名，造成20點的特殊傷害"],
     "skillType": "",
-    "versions": ["_R_02.png"],
+    "versions": ["_R_02.png", "_SR_02.png"],
     "tags": ["JP", "秘密結社holoX", "鳥", "酒"],
     "effectType": "Bloom"
   },
@@ -384,7 +384,7 @@
     "grade": "1st",
     "searchKeywords": ["小鳥遊キアラ", "小鳥遊琪亞拉", "Takanashi Kiara", "從自己的牌組上方看3張。將其中的1張成員公開，加入手牌。接著將剩餘的卡存檔。"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["EN", "Myth", "鳥"],
     "effectType": "Bloom"
   },
@@ -398,7 +398,7 @@
     "grade": "2nd",
     "searchKeywords": ["小鳥遊キアラ", "小鳥遊琪亞拉", "Takanashi Kiara", "自己存檔的成員每有1張，這個藝能傷害+10，接著將自己存檔的6張成員回到牌組並洗牌。"],
     "skillType": "",
-    "versions": ["_RR_02.png"],
+    "versions": ["_RR_02.png", "_SR_02.png", "_UR_02.png"],
     "tags": ["EN", "Myth", "鳥"],
     "effectType": ""
   },
@@ -412,7 +412,7 @@
     "grade": "1st",
     "searchKeywords": ["尾丸ポルカ", "尾丸波爾卡", "Omaru Polka", "從自己的牌組公開1張粉絲，加入手牌。接著牌組洗牌", "這個成員沒有附上<座員>的話，不能使用這個藝能"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["JP", "5期生", "獸耳"],
     "effectType": "Bloom"
   },
@@ -426,7 +426,7 @@
     "grade": "1st",
     "searchKeywords": ["ハコス・ベールズ", "哈珂斯·貝爾絲", "Hakos Baelz", "從debut開花的時候，從自己存檔的1張debut成員或1st成員返回手牌:返回的卡持有#EN時，給予對手的聯動成員20點的特殊傷害。"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["EN", "Promise", "獸耳"],
     "effectType": "Bloom"
   },
@@ -440,7 +440,7 @@
     "grade": "debut",
     "searchKeywords": ["宝鐘マリン", "寶鐘瑪琳", "Houshou Marin"],
     "skillType": "",
-    "versions": ["_C_02.png"],
+    "versions": ["_C_02.png", "_HR.png"],
     "tags": ["JP", "3期生", "畫", "海"],
     "effectType": ""
   },
@@ -454,7 +454,7 @@
     "grade": "2nd",
     "searchKeywords": ["宝鐘マリン", "寶鐘瑪琳", "Houshou Marin", "這個成員每重疊1張成員卡，這個藝能傷害+20", "將自己存檔的1張成員返回手牌:之後這個成員重疊3張以上的成員卡時，給予對手的中央成員或聯動成員50點特殊傷害"],
     "skillType": "",
-    "versions": ["_RR_02.png"],
+    "versions": ["_RR_02.png", "_SR_02.png", "_UR_02.png"],
     "tags": ["JP", "3期生", "畫", "海"],
     "effectType": "Bloom"
   },
@@ -468,7 +468,7 @@
     "grade": "1st",
     "searchKeywords": ["さくらみこ", "櫻巫女", "Sakura Miko"],
     "skillType": "",
-    "versions": ["_R_02.png"],
+    "versions": ["_R_02.png", "_SR_02.png"],
     "tags": ["JP", "0期生", "嬰兒"],
     "effectType": "Bloom"
   },
@@ -482,7 +482,7 @@
     "grade": "buzz",
     "searchKeywords": ["赤井はあと", "赤井心", "Akai Haato"],
     "skillType": "",
-    "versions": ["_RR_02.png"],
+    "versions": ["_RR_02.png", "_SR_02.png", "_UR_02.png"],
     "tags": ["JP", "1期生", "料理"],
     "effectType": "Bloom"
   },
@@ -496,7 +496,7 @@
     "grade": "1st",
     "searchKeywords": ["小鳥遊キアラ", "小鳥遊琪亞拉", "Takanashi Kiara"],
     "skillType": "",
-    "versions": ["_R_02.png"],
+    "versions": ["_R_02.png", "_SR_02.png"],
     "tags": ["EN", "Myth", "鳥"],
     "effectType": "Bloom"
   },
@@ -510,7 +510,7 @@
     "grade": "debut",
     "searchKeywords": ["ときのそら", "時乃空", "Tokino Sora"],
     "skillType": "",
-    "versions": ["_C.png"],
+    "versions": ["_C.png", "_SR.png"],
     "tags": ["JP", "0期生", "歌", "夏季"],
     "effectType": ""
   },
@@ -524,7 +524,7 @@
     "grade": "debut",
     "searchKeywords": ["ときのそら", "時乃空", "Tokino Sora"],
     "skillType": "",
-    "versions": ["_U.png"],
+    "versions": ["_U.png", "_SR.png"],
     "tags": ["JP", "0期生", "歌", "夏季"],
     "effectType": "Collaboration"
   },
@@ -538,7 +538,7 @@
     "grade": "1st",
     "searchKeywords": ["ときのそら", "時乃空", "Tokino Sora"],
     "skillType": "",
-    "versions": ["_C.png"],
+    "versions": ["_C.png", "_SR.png"],
     "tags": ["JP", "0期生", "歌", "夏季"],
     "effectType": "Gift"
   },
@@ -552,7 +552,7 @@
     "grade": "1st",
     "searchKeywords": ["ときのそら", "時乃空", "Tokino Sora"],
     "skillType": "",
-    "versions": ["_U.png"],
+    "versions": ["_U.png", "_SR.png"],
     "tags": ["JP", "0期生", "歌", "夏季"],
     "effectType": "Bloom"
   },
@@ -566,7 +566,7 @@
     "grade": "1st",
     "searchKeywords": ["ときのそら", "時乃空", "Tokino Sora"],
     "skillType": "",
-    "versions": ["_R.png"],
+    "versions": ["_R.png", "_SR.png"],
     "tags": ["JP", "0期生", "歌", "夏季"],
     "effectType": "Bloom"
   },
@@ -580,7 +580,7 @@
     "grade": "2nd",
     "searchKeywords": ["ときのそら", "時乃空", "Tokino Sora"],
     "skillType": "",
-    "versions": ["_R.png"],
+    "versions": ["_R.png", "_SR.png"],
     "tags": ["JP", "0期生", "歌", "夏季"],
     "effectType": "Collaboration"
   },
@@ -594,7 +594,7 @@
     "grade": "2nd",
     "searchKeywords": ["ときのそら", "時乃空", "Tokino Sora"],
     "skillType": "",
-    "versions": ["_RR.png"],
+    "versions": ["_RR.png", "_SR.png", "_UR.png"],
     "tags": ["JP", "0期生", "歌", "夏季"],
     "effectType": "Bloom"
   },
@@ -608,7 +608,7 @@
     "grade": "1st",
     "searchKeywords": ["百鬼あやめ", "百鬼綾目", "Nakiri Ayame"],
     "skillType": "",
-    "versions": ["_C_02.png"],
+    "versions": ["_C_02.png", "_SR_02.png"],
     "tags": ["JP", "2期生", "射手"],
     "effectType": "Bloom"
   },
@@ -622,7 +622,7 @@
     "grade": "1st",
     "searchKeywords": ["百鬼あやめ", "百鬼綾目", "Nakiri Ayame"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["JP", "2期生", "射手"],
     "effectType": "Bloom"
   },
@@ -636,7 +636,7 @@
     "grade": "debut",
     "searchKeywords": ["宝鐘マリン", "寶鐘瑪琳", "Houshou Marin"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["JP", "3期生", "畫", "海", "夏季"],
     "effectType": "Collaboration"
   },
@@ -650,7 +650,7 @@
     "grade": "2nd",
     "searchKeywords": ["星街すいせい", "星街彗星", "Hoshimachi Suisei", "從自己的聲援牌組上方的1張卡，送進自己的藍色成員裡", "可以將這個成員的2張藍聲援存檔:這個成員每重疊一張成員卡，這個藝能傷害+60(這個藝能也可以選擇對手的後備成員作為對象)"],
     "skillType": "",
-    "versions": ["_RR_02.png"],
+    "versions": ["_RR_02.png", "_SR_02.png"],
     "tags": ["JP", "0期生", "歌"],
     "effectType": "Collaboration"
   },
@@ -664,7 +664,7 @@
     "grade": "1st",
     "searchKeywords": ["ムーナ・ホシノヴァ", "暮娜·惑星諾瓦", "Moona Hoshinova", "從自己的聲援牌組公開1張綠聲援或藍聲援，送進自己的成員裡，接著將聲援牌組洗牌"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["ID", "ID1期生", "歌"],
     "effectType": "Bloom"
   },
@@ -678,7 +678,7 @@
     "grade": "1st",
     "searchKeywords": ["オーロ・クロニー", "奧羅·克洛尼", "Ouro Kronii", "從自己的聲援牌組公開1張與自己持有#promise成員相同顏色的聲援卡，送進自己持有#promise的成員裡，接著將聲援牌組洗牌"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["EN", "Promise"],
     "effectType": "Bloom"
   },
@@ -692,7 +692,7 @@
     "grade": "1st",
     "searchKeywords": ["星街すいせい", "星街彗星", "Hoshimachi Suisei"],
     "skillType": "",
-    "versions": ["_R_02.png"],
+    "versions": ["_R_02.png", "_SR_02.png"],
     "tags": ["JP", "0期生", "歌"],
     "effectType": "Bloom"
   },
@@ -706,7 +706,7 @@
     "grade": "1st",
     "searchKeywords": ["FUWAMOCO", "FUWAMOCO", "FUWAMOCO"],
     "skillType": "",
-    "versions": ["_R_02.png"],
+    "versions": ["_R_02.png", "_SR_02.png"],
     "tags": ["EN", "Advent", "獸耳"],
     "effectType": ""
   },
@@ -720,7 +720,7 @@
     "grade": "1st",
     "searchKeywords": ["雪花ラミィ", "雪花菈米", "Yukihana Lamy"],
     "skillType": "",
-    "versions": ["_R_02.png"],
+    "versions": ["_R_02.png", "_SR_02.png"],
     "tags": ["JP", "5期生", "半精靈", "酒"],
     "effectType": "Collaboration"
   },
@@ -734,7 +734,7 @@
     "grade": "2nd",
     "searchKeywords": ["猫又おかゆ", "貓又小粥", "Nekomata Okayu"],
     "skillType": "",
-    "versions": ["_RR_02.png"],
+    "versions": ["_RR_02.png", "_SR_02.png", "_UR_02.png"],
     "tags": ["JP", "Gamers", "獸耳"],
     "effectType": "Gift"
   },
@@ -748,7 +748,7 @@
     "grade": "debut",
     "searchKeywords": ["宝鐘マリン", "寶鐘瑪琳", "Houshou Marin"],
     "skillType": "",
-    "versions": ["_C.png"],
+    "versions": ["_C.png", "_SR.png"],
     "tags": ["JP", "3期生", "畫", "海", "夏季"],
     "effectType": ""
   },
@@ -762,7 +762,7 @@
     "grade": "debut",
     "searchKeywords": ["宝鐘マリン", "寶鐘瑪琳", "Houshou Marin"],
     "skillType": "",
-    "versions": ["_U.png"],
+    "versions": ["_U.png", "_SR.png"],
     "tags": ["JP", "3期生", "畫", "海", "夏季"],
     "effectType": "Collaboration"
   },
@@ -776,7 +776,7 @@
     "grade": "1st",
     "searchKeywords": ["宝鐘マリン", "寶鐘瑪琳", "Houshou Marin"],
     "skillType": "",
-    "versions": ["_C.png"],
+    "versions": ["_C.png", "_SR.png"],
     "tags": ["JP", "3期生", "畫", "海", "夏季"],
     "effectType": "Collaboration"
   },
@@ -790,7 +790,7 @@
     "grade": "1st",
     "searchKeywords": ["宝鐘マリン", "寶鐘瑪琳", "Houshou Marin"],
     "skillType": "",
-    "versions": ["_U.png"],
+    "versions": ["_U.png", "_SR.png"],
     "tags": ["JP", "3期生", "畫", "海", "夏季"],
     "effectType": "Bloom"
   },
@@ -804,7 +804,7 @@
     "grade": "buzz",
     "searchKeywords": ["宝鐘マリン", "寶鐘瑪琳", "Houshou Marin"],
     "skillType": "",
-    "versions": ["_R.png"],
+    "versions": ["_R.png", "_SR.png"],
     "tags": ["JP", "3期生", "畫", "海", "夏季"],
     "effectType": ""
   },
@@ -818,7 +818,7 @@
     "grade": "2nd",
     "searchKeywords": ["宝鐘マリン", "寶鐘瑪琳", "Houshou Marin"],
     "skillType": "",
-    "versions": ["_R.png"],
+    "versions": ["_R.png", "_SR.png"],
     "tags": ["JP", "3期生", "畫", "海", "夏季"],
     "effectType": ""
   },
@@ -832,7 +832,7 @@
     "grade": "2nd",
     "searchKeywords": ["宝鐘マリン", "寶鐘瑪琳", "Houshou Marin"],
     "skillType": "",
-    "versions": ["_RR.png"],
+    "versions": ["_RR.png", "_SR.png", "_UR.png"],
     "tags": ["JP", "3期生", "畫", "海", "夏季"],
     "effectType": "Bloom"
   },
@@ -846,7 +846,7 @@
     "grade": "1st",
     "searchKeywords": ["猫又おかゆ", "貓又小粥", "Nekomata Okayu"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["JP", "Gamers", "獸耳"],
     "effectType": "Bloom"
   },
@@ -860,7 +860,7 @@
     "grade": "1st",
     "searchKeywords": ["森カリオペ", "森美聲", "Mori Calliope", "將自己存檔的1張森美聲的鐮刀或Death-sensei返回手牌"],
     "skillType": "",
-    "versions": ["_R_02.png"],
+    "versions": ["_R_02.png", "_SR_02.png"],
     "tags": ["EN", "Myth", "歌"],
     "effectType": "Bloom"
   },
@@ -874,7 +874,7 @@
     "grade": "2nd",
     "searchKeywords": ["森カリオペ", "森美聲", "Mori Calliope", "從自己的牌組公開1張卡，進行存檔。接著牌組洗牌", "自己的存檔區持有#Myth的成員有4張或以上時，這個藝能傷害+40。8張以上時，這個藝能傷害再+40"],
     "skillType": "",
-    "versions": ["_RR_02.png"],
+    "versions": ["_RR_02.png", "_SR_02.png", "_UR_02.png"],
     "tags": ["EN", "Myth", "歌"],
     "effectType": "Bloom"
   },
@@ -888,7 +888,7 @@
     "grade": "1st",
     "searchKeywords": ["ネリッサ・レイヴンクロフト", "納瑞莎·雷文克羅夫特", "Nerissa Ravencroft", "從自己的牌組上方看3張。將其中的1張持有#歌的成員公開，加入手牌。接著將剩下的卡依照喜好順序放回牌組最下方"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["EN", "Advent", "歌", "鳥"],
     "effectType": "Bloom"
   },
@@ -902,7 +902,7 @@
     "grade": "1st",
     "searchKeywords": ["ロボ子さん", "蘿蔔子", "Roboco-san"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["JP", "0期生", "射手"],
     "effectType": "Bloom"
   },
@@ -916,7 +916,7 @@
     "grade": "2nd",
     "searchKeywords": ["ロボ子さん", "蘿蔔子", "Roboco-san"],
     "skillType": "",
-    "versions": ["_R_02.png"],
+    "versions": ["_R_02.png", "_SR_02.png"],
     "tags": ["JP", "0期生", "射手"],
     "effectType": ""
   },
@@ -930,7 +930,7 @@
     "grade": "1st",
     "searchKeywords": ["ネリッサ・レイヴンクロフト", "納瑞莎·雷文克羅夫特", "Nerissa Ravencroft"],
     "skillType": "",
-    "versions": ["_R_02.png"],
+    "versions": ["_R_02.png", "_SR_02.png"],
     "tags": ["EN", "Advent", "歌", "鳥"],
     "effectType": "Bloom"
   },
@@ -944,7 +944,7 @@
     "grade": "1st",
     "searchKeywords": ["癒月ちょこ", "癒月巧可", "Yuzuki Choco"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["JP", "2期生", "料理"],
     "effectType": "Bloom"
   },
@@ -958,7 +958,7 @@
     "grade": "1st",
     "searchKeywords": ["戌神ころね", "戌神沁音", "Inugami Korone"],
     "skillType": "",
-    "versions": ["_R_02.png"],
+    "versions": ["_R_02.png", "_SR_02.png"],
     "tags": ["JP", "Gamers", "獸耳"],
     "effectType": "Gift"
   },
@@ -972,7 +972,7 @@
     "grade": "1st",
     "searchKeywords": ["角巻わため", "角卷綿芽", "Tsunomaki Watame"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["JP", "4期生", "獸耳", "歌"],
     "effectType": "Bloom"
   },
@@ -986,7 +986,7 @@
     "grade": "1st",
     "searchKeywords": ["大空スバル", "大空昴", "Ozora Subaru"],
     "skillType": "",
-    "versions": ["_R_02.png"],
+    "versions": ["_R_02.png", "_SR_02.png"],
     "tags": ["JP", "2期生", "鳥"],
     "effectType": ""
   },
@@ -1000,7 +1000,7 @@
     "grade": "2nd",
     "searchKeywords": ["大空スバル", "大空昴", "Ozora Subaru"],
     "skillType": "",
-    "versions": ["_RR_02.png"],
+    "versions": ["_RR_02.png", "_SR_02.png", "_UR_02.png"],
     "tags": ["JP", "2期生", "歌", "鳥"],
     "effectType": "Bloom"
   },
@@ -1014,7 +1014,7 @@
     "grade": "1st",
     "searchKeywords": ["桃鈴ねね", "桃鈴音音", "Momosuzu Nene"],
     "skillType": "",
-    "versions": ["_U_02.png"],
+    "versions": ["_U_02.png", "_SR_02.png"],
     "tags": ["JP", "5期生", "歌", "畫"],
     "effectType": "Bloom"
   },
@@ -1028,7 +1028,7 @@
     "grade": "debut",
     "searchKeywords": ["博衣こより", "博衣小夜璃", "博衣可佑理", "Hakui Koyori"],
     "skillType": "",
-    "versions": ["_C.png"],
+    "versions": ["_C.png", "_SR.png"],
     "tags": ["JP", "秘密結社holoX", "獸耳", "夏季"],
     "effectType": "Gift"
   },
@@ -1042,7 +1042,7 @@
     "grade": "debut",
     "searchKeywords": ["博衣こより", "博衣小夜璃", "博衣可佑理", "Hakui Koyori"],
     "skillType": "",
-    "versions": ["_U.png"],
+    "versions": ["_U.png", "_SR.png"],
     "tags": ["JP", "秘密結社holoX", "獸耳", "夏季"],
     "effectType": "Collaboration"
   },
@@ -1056,7 +1056,7 @@
     "grade": "1st",
     "searchKeywords": ["博衣こより", "博衣小夜璃", "博衣可佑理", "Hakui Koyori"],
     "skillType": "",
-    "versions": ["_C.png"],
+    "versions": ["_C.png", "_SR.png"],
     "tags": ["JP", "秘密結社holoX", "獸耳", "夏季"],
     "effectType": ""
   },
@@ -1070,7 +1070,7 @@
     "grade": "1st",
     "searchKeywords": ["博衣こより", "博衣小夜璃", "博衣可佑理", "Hakui Koyori"],
     "skillType": "",
-    "versions": ["_U.png"],
+    "versions": ["_U.png", "_SR.png"],
     "tags": ["JP", "秘密結社holoX", "獸耳", "夏季"],
     "effectType": "Collaboration"
   },
@@ -1084,7 +1084,7 @@
     "grade": "1st",
     "searchKeywords": ["博衣こより", "博衣小夜璃", "博衣可佑理", "Hakui Koyori"],
     "skillType": "",
-    "versions": ["_R.png"],
+    "versions": ["_R.png", "_SR.png"],
     "tags": ["JP", "秘密結社holoX", "獸耳", "夏季"],
     "effectType": "Bloom"
   },
@@ -1098,7 +1098,7 @@
     "grade": "2nd",
     "searchKeywords": ["博衣こより", "博衣小夜璃", "博衣可佑理", "Hakui Koyori"],
     "skillType": "",
-    "versions": ["_R.png"],
+    "versions": ["_R.png", "_SR.png"],
     "tags": ["JP", "秘密結社holoX", "獸耳", "夏季"],
     "effectType": "Bloom"
   },
@@ -1112,7 +1112,7 @@
     "grade": "2nd",
     "searchKeywords": ["博衣こより", "博衣小夜璃", "博衣可佑理", "Hakui Koyori"],
     "skillType": "",
-    "versions": ["_RR.png"],
+    "versions": ["_RR.png", "_SR.png", "_UR.png"],
     "tags": ["JP", "秘密結社holoX", "獸耳", "夏季"],
     "effectType": "Gift"
   },
@@ -1126,7 +1126,7 @@
     "grade": "debut",
     "searchKeywords": ["角巻わため", "角卷綿芽", "Tsunomaki Watame"],
     "skillType": "",
-    "versions": ["_C_02.png"],
+    "versions": ["_C_02.png", "_SR_02.png"],
     "tags": ["JP", "4期生", "獸耳", "歌", "夏季"],
     "effectType": "Collaboration"
   },
@@ -1226,7 +1226,7 @@
     "color": "",
     "grade": "",
     "searchKeywords": ["event", "イベント", "SorAZセレブレーション", "SorAZ慶典"],
-    "versions": ["_U_t02.png"],
+    "versions": ["_SR_02.png", "_U_t02.png"],
     "tags": ["LIMITED"]
   },
   {
@@ -1355,6 +1355,105 @@
     "type": "Support",
     "name": "ﾁｬｷ丸",
     "imageFolder": "hSD06/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["tool", "ツール", "ﾁｬｷ丸"],
+    "versions": ["_C.png"],
+    "tags": ""
+  },
+  {
+    "id": "hBP01-104",
+    "type": "Support",
+    "name": "ふつうのパソコン",
+    "imageFolder": "hEB01/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["item", "アイテム", "ふつうのパソコン", "普通的電腦", "出場至舞台"],
+    "versions": ["_C.png"],
+    "tags": ""
+  },
+  {
+    "id": "hBP01-107",
+    "type": "Support",
+    "name": "アンコール",
+    "imageFolder": "hEB01/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["event", "イベント", "アンコール", "安可", "聲援"],
+    "versions": ["_C.png"],
+    "tags": ""
+  },
+  {
+    "id": "hBP01-118",
+    "type": "Support",
+    "name": "あん肝",
+    "imageFolder": "hEB01/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["mascot", "マスコット", "あん肝", "安康肝", "HP+", "ときのそら", "時乃空", "Tokino Sora"],
+    "versions": ["_C.png"],
+    "tags": ""
+  },
+  {
+    "id": "hBP02-079",
+    "type": "Support",
+    "name": "爆発の魔法",
+    "imageFolder": "hEB01/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["event", "イベント", "爆発の魔法", "爆炸的魔法", "一回合僅能使用1次", "特殊傷害"],
+    "versions": ["_U.png"],
+    "tags": ["魔法"]
+  },
+  {
+    "id": "hBP02-095",
+    "type": "Support",
+    "name": "ドクロくん",
+    "imageFolder": "hEB01/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["mascot", "マスコット", "ドクロくん", "骷髏君", "中央位置限定", "藝能傷害+", "宝鐘マリン", "寶鐘瑪琳", "Houshou Marin"],
+    "versions": ["_C.png"],
+    "tags": ""
+  },
+  {
+    "id": "hBP03-088",
+    "type": "Support",
+    "name": "凸待ち",
+    "imageFolder": "hEB01/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["event", "イベント", "凸待ち"],
+    "versions": ["_U.png"],
+    "tags": ["LIMITED"]
+  },
+  {
+    "id": "hBP04-105",
+    "type": "Support",
+    "name": "こよりの助手くん",
+    "imageFolder": "hEB01/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["fan", "ファン", "こよりの助手くん", "小夜璃的助手君", "可佑理的助手君", "博衣こより", "博衣小夜璃", "博衣可佑理", "Hakui Koyori"],
+    "versions": ["_U.png"],
+    "tags": ["小夜璃實驗室"]
+  },
+  {
+    "id": "hSD01-018",
+    "type": "Support",
+    "name": "サブパソコン",
+    "imageFolder": "hEB01/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["item", "アイテム", "サブパソコン", "備用電腦"],
+    "versions": ["_C.png"],
+    "tags": ""
+  },
+  {
+    "id": "hSD06-011",
+    "type": "Support",
+    "name": "ﾁｬｷ丸",
+    "imageFolder": "hEB01/",
     "color": "",
     "grade": "",
     "searchKeywords": ["tool", "ツール", "ﾁｬｷ丸"],

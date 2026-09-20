@@ -8,7 +8,7 @@ const WEBP_DIR = path.join(__dirname, 'client/public/webpcards/hBD24');
 const NEW_DIR = path.join(__dirname, 'new_cards/hBD24');
 const JSON_PATH = path.join(__dirname, 'client/src/cardList_hBD24.json');
 const SRC = path.join(__dirname, 'client/src');
-const MAGICK = 'C:\\Program Files\\ImageMagick-7.1.2-Q16-HDRI\\magick.exe';
+const MAGICK = process.env.MAGICK || 'magick'; // 預設用 PATH 上的 magick，路徑不同可用環境變數 MAGICK 指定
 
 async function main() {
   // 1. 從官方卡表搜尋抓 卡號 -> { 卡名, 圖檔 }

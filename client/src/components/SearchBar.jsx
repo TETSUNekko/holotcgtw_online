@@ -29,6 +29,7 @@ const SERIES_LIST = [
   { value: "hBP06", label: "hBP06　ブースターパック「アヤカシヴァーミリオン」" },
   { value: "hBP07", label: "hBP07　ブースターパック「ディーヴァフィーバー」" },
   { value: "hBP08", label: "hBP08　ブースターパック「バウンサーバウンド」" },
+  { value: "hBP09", label: "hBP09　ブースターパック「ボリュームヴォルテックス」" },
   { value: "hSD01", label: "hSD01　スタートデッキ「ときのそら＆AZKi」" },
   { value: "hSD02", label: "hSD02　スタートデッキ 赤 百鬼あやめ" },
   { value: "hSD03", label: "hSD03　スタートデッキ 青 猫又おかゆ" },

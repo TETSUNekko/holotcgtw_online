@@ -173,9 +173,51 @@ fallback = `webpcards/${id前綴}-trans/${entry.id}.webp`          // 卡片原�
 ```
 這樣復刻卡會優先吃到新彈版本的翻譯，沒有才 fallback 回原彈的舊翻譯。
 
+**翻譯圖來源資料夾**（鳳凰貓提供）目前放在 `D:\Download\HOLO-TCG翻譯`，**每彈一個子資料夾**。
+`process-images.ps1` **不會遞迴**，要逐一對每個子資料夾跑：
+
+```powershell
+$root = "C:\Users\Johna\Desktop\holotcgtw_online\client\public\webpcards"
+foreach ($d in Get-ChildItem "D:\Download\HOLO-TCG翻譯" -Directory) {
+  .\process-images.ps1 -InputFolder $d.FullName -WebpRoot $root -AutoRoute
+}
+```
+
+- ⚠️ **一定要傳 `-WebpRoot`**：腳本的預設值還指向舊資料夾名稱 `holotcg-online`，不傳會寫到不存在的路徑。
+- **復刻卡的翻譯圖要保留**（`hBP06-hBP01-048.jpg` 這種命名）。實測復刻卡的翻譯圖與原彈版本
+  差異約 100 萬像素＝根本是不同張圖（新彈重繪的卡面），而 [ZoomModal.jsx](client/src/components/DeckBuilder/ZoomModal.jsx)
+  是**先找 `<卡圖所在彈>-trans/`、找不到才 fallback 回原彈**，留著才會顯示到正確的那張。
+- `hPR-002.jpg` 在 `PR` 和 `hSD05` 兩個來源資料夾各有一份，都輸出到 `hPR-trans/hPR-002.webp`，
+  後跑的會覆蓋前者（資料夾按名稱排序，`PR` 在最後）。所以來源 1526 張 → 輸出 1525 張是正常的。
+
 ⚠️ **這支檔案必須存成 UTF-8 with BOM**。PowerShell 5.1 讀 .ps1 預設當 ANSI(cp950)，
 沒 BOM 的話裡面的中文會亂碼，導致字串沒收尾、整個檔案語法錯誤。
 用別的編輯器改完記得確認編碼。
+
+### ⚠️ 新彈實戰補充（2026-09-20 hBP09 經驗）
+
+`sync-cards.cjs --download` 跑完**不代表卡圖齊全**，以下兩類它一定抓不到，收工前務必跑健康檢查：
+
+1. **主推卡（Oshi）完全抓不到**——decklog API 不收主推卡（本文件上方已記載）。
+   hBP09 這次 7 張主推卡的 18 個版本（`_OSR`/`_OUR`/`_SEC`）全數缺漏，健康檢查的「版本錯誤」會抓出來。
+   補法：直接打官方 CDN
+   ```bash
+   CDN=https://hololive-official-cardgame.com/wp-content/images/cardlist
+   curl -H 'Referer: https://hololive-official-cardgame.com/' -o hBP09-001_OSR.png "$CDN/hBP09/hBP09-001_OSR.png"
+   magick hBP09-001_OSR.png client/public/webpcards/hBP09/hBP09-001_OSR.webp
+   ```
+2. **新彈附的新エール卡** decklog 也沒有。hBP09 收錄了 `hY01-015`／`hY02-013`／`hY03-017`／
+   `hY04-014`／`hY05-012`／`hY06-012`，官方圖放在 **hBP09 資料夾**（`hBP09/hY01-015_SY.png`），
+   但**本站慣例是放 `energy/` 並寫進 `cardList_hY.json`**（最小欄位：id／type: Energy／color／
+   imageFolder: energy/／versions），不要留在 `cardList_hBP09.json` 裡——`fetch-set.cjs` 會把它們
+   一起產出來，要手動搬走。
+
+⚠️ **待處理：官方有、本站缺的 8 張エール卡**（2026-09-20 對帳發現，**與 hBP09 無關，是既有缺漏**）：
+`hY01-014`、`hY02-012`、`hY03-016`、`hY04-013`、`hY05-011`、`hY06-011`、`hY03-018`、`hY04-015`。
+官方卡號共 1388 個（扣掉 1 筆「デッキ構築ルール」說明頁不算卡），本站 1379 個，差的就是這 8 張。
+快取 `.official-cards.json` 沒存卡圖路徑，要先確認它們屬於哪個商品資料夾才能下載。
+
+**エクストラ卡清單**：`node audit-cards.cjs --refetch` 會自動更新，hBP09 上線後 154 → 160 張。
 
 ### 新彈 / 新卡圖標準流程
 ```bash

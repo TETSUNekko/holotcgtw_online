@@ -8,6 +8,7 @@ import cardListBP05 from "../cardList_hBP05.json";
 import cardListBP06 from "../cardList_hBP06.json";
 import cardListBP07 from "../cardList_hBP07.json";
 import cardListBP08 from "../cardList_hBP08.json";
+import cardListBP09 from "../cardList_hBP09.json";
 
 import cardListSD01 from "../cardList_hSD01.json";
 import cardListSD02 from "../cardList_hSD02.json";
@@ -43,7 +44,7 @@ import cardListTwinWafer from "../cardList_TwinWafer.json";
 export const cardSets = [
   cardListEB01,
   cardListBP01, cardListBP02, cardListBP03, cardListBP04, cardListBP05,
-  cardListBP06, cardListBP07, cardListBP08,
+  cardListBP06, cardListBP07, cardListBP08, cardListBP09,
   cardListSD01, cardListSD02, cardListSD03, cardListSD04, cardListSD05,
   cardListSD06, cardListSD07, cardListSD08, cardListSD09, cardListSD10,
   cardListSD11, cardListSD12, cardListSD13, cardListSD14, cardListSD15,
@@ -59,7 +60,7 @@ export const allTags = [
   "畫", "歌", "酒", "鳥", "秘密結社holoX", "Gamers", "料理",
   "射手", "語言學", "Advent", "HoloWitch", "魔法", "白上的角色",
   "嬰兒", "DEV_IS", "ReGLOSS", "Justice", "食物", "香菇", "夏季", "小夜璃實驗室",
-  "FLOW GLOW", "Buzz商品", "卡埃拉的武器"
+  "FLOW GLOW", "Buzz商品", "卡埃拉的武器", "菈米的酒"
 
 ];
 
@@ -84,4 +85,5 @@ export const changelog = [
   "  7/3 更新內容 : 網站優化及BUG修正；卡圖補齊，現在各版本卡圖皆可搜尋 ",
   " 8/18 更新內容 : 博衣こより中文翻譯修正；hEB01卡表上線 ",
   " 8/19 更新內容 : 機率測試，牌組檢查等等功能 + 優化 ",
+  " 9/20 更新內容 : hBP09「ボリュームヴォルテックス」卡表上線；全站翻譯圖更新 ",
 ];
