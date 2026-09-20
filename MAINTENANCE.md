@@ -190,6 +190,12 @@ foreach ($d in Get-ChildItem "D:\Download\HOLO-TCG翻譯" -Directory) {
 - `hPR-002.jpg` 在 `PR` 和 `hSD05` 兩個來源資料夾各有一份，都輸出到 `hPR-trans/hPR-002.webp`，
   後跑的會覆蓋前者（資料夾按名稱排序，`PR` 在最後）。所以來源 1526 張 → 輸出 1525 張是正常的。
 
+**卡圖與翻譯圖的尺寸差很多**：卡圖 400x559（直式），翻譯圖裁切後是 1120x1080（接近正方形）。
+[ZoomModal.jsx](client/src/components/DeckBuilder/ZoomModal.jsx) 桌面版原本只給 `maxHeight`，
+卡圖因此永遠停在原始的 559px 不會放大，翻譯圖卻被 `72vh` 放大到比卡圖還高，看起來一大一小。
+2026-09-20 改成兩張圖共用 `IMG_H = "min(74vh, 620px)"` + `width: auto`——
+用 `height` 才會等高，620px 的上限是避免 559px 的卡圖被放大到糊掉。
+
 ⚠️ **這支檔案必須存成 UTF-8 with BOM**。PowerShell 5.1 讀 .ps1 預設當 ANSI(cp950)，
 沒 BOM 的話裡面的中文會亂碼，導致字串沒收尾、整個檔案語法錯誤。
 用別的編輯器改完記得確認編碼。

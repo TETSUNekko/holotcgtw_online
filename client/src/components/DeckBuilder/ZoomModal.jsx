@@ -17,6 +17,10 @@ function ZoomModal({ card, imageUrl, onClose, onPrev, onNext }) {
     setShowTranslated(true);
   }, [card?.key]);
 
+  // 卡圖 400x559、翻譯圖 1120x1080，原始尺寸差很多。
+  // 兩邊共用同一個高度才不會一大一小；上限 620px 是避免 559px 的卡圖被放大到糊掉。
+  const IMG_H = "min(74vh, 620px)";
+
   if (!card || !imageUrl) return null;
 
   const entry = card.key ? parseKey(card.key) : null;
@@ -150,20 +154,20 @@ function ZoomModal({ card, imageUrl, onClose, onPrev, onNext }) {
         <div
           style={{
             display: "flex", flexDirection: "row",
-            alignItems: "flex-start",
-            gap: "16px", padding: "24px 80px",
+            alignItems: "center",
+            gap: "16px", padding: "24px 40px",
             boxSizing: "border-box", overflow: "auto",
             maxHeight: "100vh",
           }}
           onClick={(e) => e.stopPropagation()}
         >
           <img src={imageUrl} alt="原圖"
-            style={{ flex: "0 0 auto", maxHeight: "82vh", objectFit: "contain", borderRadius: "8px" }}
+            style={{ flex: "0 0 auto", height: IMG_H, width: "auto", maxWidth: "40vw", objectFit: "contain", borderRadius: "8px" }}
           />
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "12px", flex: "0 0 auto" }}>
             {primary && showTranslated && (
               <img src={primary} alt="翻譯圖"
-                style={{ maxHeight: "72vh", objectFit: "contain", borderRadius: "8px" }}
+                style={{ height: IMG_H, width: "auto", maxWidth: "48vw", objectFit: "contain", borderRadius: "8px" }}
                 onError={handleError}
               />
             )}
