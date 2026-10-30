@@ -106,7 +106,10 @@ node sync-cards.cjs --download  # 下載 PNG 到 new_cards/（已 gitignore）�
 - 資料來源：官方 decklog API `POST https://decklog.bushiroad.com/system/app/api/search/9`（免登入，需帶 Referer header），每頁 30 張分頁抓完
 - 圖片 CDN：`https://hololive-official-cardgame.com/wp-content/images/cardlist/{資料夾}/{檔名}.png`
 - 比對方式：**只比對檔名**（官方與本地資料夾名不一致，同卡可能在多個資料夾）
-- 資料夾對應：官方 `hWF01`＝本地 `Twin_Wafer`、官方 `hCO01`＝本地 `2025Live_Set`（寫在腳本的 `FOLDER_ALIAS`）
+- 資料夾對應：官方 `hWF01`＝本地 `Twin_Wafer`、官方 `hCO01`＝本地 `2025Live_Set`（寫在腳本的 `FOLDER_ALIAS`）；
+  `hCO02`／`hCO03` 本地沿用官方同名資料夾，不需 alias
+- ⚠️ **只比對檔名也有盲點**：收藏系商品（hCO02/03）裡的 `hBP06-019_SR.png` 跟原彈同檔名，會被當成「已有」而跳過，
+  所以新商品資料夾要自己對照 `fetch-set.cjs` 的清單補圖（從官方 `{新資料夾}/{檔名}.png` 直接下載）
 - 轉檔依賴 ImageMagick（路徑寫在腳本開頭的 `MAGICK`）
 - `sele` 開頭的教學卡會自動跳過
 
@@ -248,7 +251,19 @@ curl -s -H "Referer: $BASE/" "$BASE/cardlist/cardsearch/?keyword=$ID&$Q" |
   grep -oE "images/cardlist/[A-Za-z0-9_]+/$ID[A-Za-z0-9_]*\.png" | sort -u
 ```
 
-**エクストラ卡清單**：`node audit-cards.cjs --refetch` 會自動更新，hBP09 上線後 154 → 160 張。
+**エクストラ卡清單**：`node audit-cards.cjs --refetch` 會自動更新，hBP09 上線後 154 → 160 張，
+hSD20/21 上線後 → 163 張。
+
+### ⚠️ 起始牌組實戰補充（2026-10-30 hSD20／hSD21 經驗）
+
+- **基本エール（`hY0x-001`）要從 JSON 刪掉**：`fetch-set.cjs` 會把牌組附的赤／青／紫エール一起產出，
+  但本站只放在 `energy/`＋`cardList_hY.json`，hSD01～hSD19 都沒有這種 entry。
+- **主推卡 `life` 會是空白**，要照翻譯圖（初始生命）手動填。
+- **全新角色沒有前例**，`searchKeywords` 只會有日文名，要手補成 `[日文, 中文, 英文]`；
+  中文讀翻譯圖、英文用官方羅馬拼音（百灯キョーコ＝Hyakuto Kyoko、宙科そぴあ＝Sorashina Sopia、熱千めら＝Achichi Mela）。
+- **已修：沿用原彈卡圖的 entry 以前 `imageFolder` 指向原彈**（例如 `hBP01/`），`update-versions.cjs`
+  看到本彈資料夾裡的複製圖又會再建一筆，變成重複。`fetch-set.cjs` 已改成直接指向本彈。
+  hEB01 當時留下 9 筆指向原彈的舊 entry（與正確的那 9 筆並存），已於 2026-10-30 刪除（111 → 102 筆）。
 
 ### 新彈 / 新卡圖標準流程
 ```bash

@@ -29,6 +29,8 @@ import cardListSD16 from "../cardList_hSD16.json";
 import cardListSD17 from "../cardList_hSD17.json";
 import cardListSD18 from "../cardList_hSD18.json";
 import cardListSD19 from "../cardList_hSD19.json";
+import cardListSD20 from "../cardList_hSD20.json";
+import cardListSD21 from "../cardList_hSD21.json";
 
 import cardListEB01 from "../cardList_hEB01.json";
 
@@ -38,6 +40,8 @@ import cardListPC from "../cardList_PC_Set.json";
 import cardListCS01 from "../cardList_hCS01.json";
 import cardListPR from "../cardList_PR.json";
 import cardList2025Live from "../cardList_2025Live_Set.json";
+import cardListCO02 from "../cardList_hCO02.json";
+import cardListCO03 from "../cardList_hCO03.json";
 import cardListTwinWafer from "../cardList_TwinWafer.json";
 
 // 🔹 集中管理所有卡表
@@ -48,8 +52,9 @@ export const cardSets = [
   cardListSD01, cardListSD02, cardListSD03, cardListSD04, cardListSD05,
   cardListSD06, cardListSD07, cardListSD08, cardListSD09, cardListSD10,
   cardListSD11, cardListSD12, cardListSD13, cardListSD14, cardListSD15,
-  cardListSD16, cardListSD17, cardListSD18, cardListSD19,
-  cardListPR, cardListBD24, energyCardList, CardListYS01, cardListPC, cardListCS01, cardList2025Live, cardListTwinWafer
+  cardListSD16, cardListSD17, cardListSD18, cardListSD19, cardListSD20,
+  cardListSD21,
+  cardListPR, cardListBD24, energyCardList, CardListYS01, cardListPC, cardListCS01, cardList2025Live, cardListCO02, cardListCO03, cardListTwinWafer
 ];
 
 // 🔹 集中管理標籤
@@ -60,7 +65,7 @@ export const allTags = [
   "畫", "歌", "酒", "鳥", "秘密結社holoX", "Gamers", "料理",
   "射手", "語言學", "Advent", "HoloWitch", "魔法", "白上的角色",
   "嬰兒", "DEV_IS", "ReGLOSS", "Justice", "食物", "香菇", "夏季", "小夜璃實驗室",
-  "FLOW GLOW", "Buzz商品", "卡埃拉的武器", "菈米的酒"
+  "FLOW GLOW", "Buzz商品", "卡埃拉的武器", "菈米的酒", "玩樂★巡遊隊！"
 
 ];
 
@@ -86,4 +91,5 @@ export const changelog = [
   " 8/18 更新內容 : 博衣こより中文翻譯修正；hEB01卡表上線 ",
   " 8/19 更新內容 : 機率測試，牌組檢查等等功能 + 優化 ",
   " 9/20 更新內容 : hBP09「ボリュームヴォルテックス」卡表上線；全站翻譯圖更新 ",
+  "10/30 更新內容 : hSD20、hSD21「アソビ★まわり隊！」起始牌組卡表上線；新增エクストリーマーカップ25-26 Final ホロカコレクションA/B ",
 ];

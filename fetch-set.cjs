@@ -40,6 +40,7 @@ const TAG = {
   '白上\'sキャラクター': '白上的角色',   // 官方是 #白上'sキャラクター
   'FLOW': 'FLOW GLOW',                // 官方寫 #FLOW GLOW，標籤含空白，#[^\s#]+ 只切得到 FLOW
   'カエラ\'sアームズ': '卡埃拉的武器',
+  'アソビ★まわり隊！': '玩樂★巡遊隊！',  // 2026-10-30 hSD20/hSD21，譯名讀自翻譯圖
 };
 
 // 支援卡中文譯名（角色卡會自動從既有卡表撈，支援卡沒有前例只能列表）
@@ -78,6 +79,11 @@ const NAME_ZH = {
   "メイクアップ": "化妝",
   "雪夜月": "雪夜月",
   "Pemaloe": "Pemaloe",
+  // hSD20/hSD21「アソビ★まわり隊！」(2026-10-30，譯名讀自翻譯圖)
+  "アソビ★まわり隊！": "玩樂★巡遊隊！",
+  "ぐるぐるTIME！": "轉圈圈TIME！",
+  "百灯キョーコの拡声器": "百燈響子的擴音器",
+  "熱千めらの拍子木": "熱千玫拉的拍子木",
 
 };
 
@@ -189,6 +195,7 @@ const decode = s => s
     if (!versions.length && c.otherFolders.size) {
       const [srcFolder, ver] = [...c.otherFolders.entries()][0];
       versions = [ver];
+      c.folder = SET;   // 圖會複製進本彈資料夾，entry 也指向本彈（否則 update-versions.cjs 會再建一筆重複的）
       skipped.push({ num: c.num, name: c.name, from: srcFolder, file: c.num + ver.replace('.png', '') });
     }
     if (!versions.length) continue;

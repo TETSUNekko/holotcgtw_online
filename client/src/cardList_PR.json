@@ -1030,7 +1030,7 @@
     "grade": "debut",
     "searchKeywords": ["獅白ぼたん", "獅白牡丹", "Shishiro Botan"],
     "skillType": "",
-    "versions": ["_P.png"],
+    "versions": ["_P.png", "_P_02.png"],
     "tags": ["JP", "5期生", "獸耳", "射手"],
     "effectType": "Gift"
   },
@@ -1406,7 +1406,7 @@
     "grade": "debut",
     "searchKeywords": ["ラプラス・ダークネス", "拉普拉斯·達克尼斯", "Laplus Darknesss"],
     "skillType": "",
-    "versions": ["_P.png"],
+    "versions": ["_P.png", "_P_02.png"],
     "tags": ["JP", "秘密結社holoX", "射手"],
     "effectType": ""
   },
@@ -2015,7 +2015,7 @@
     "grade": "1st",
     "searchKeywords": ["獅白ぼたん", "獅白牡丹", "Shishiro Botan"],
     "skillType": "",
-    "versions": ["_P.png"],
+    "versions": ["_P.png", "_P_02.png"],
     "tags": ["JP", "5期生", "獸耳", "射手"],
     "effectType": "Bloom"
   },
@@ -2402,7 +2402,7 @@
     "color": "",
     "grade": "",
     "searchKeywords": ["item", "アイテム", "フレンドリーパソコン", "友好電腦"],
-    "versions": ["_P.png", "_P_02.png"],
+    "versions": ["_P.png", "_P_02.png", "_P_03.png", "_P_04.png"],
     "tags": []
   },
   {
@@ -4127,5 +4127,157 @@
     "versions": ["_P.png"],
     "tags": ["JP", "2期生", "鳥"],
     "effectType": "Collaboration"
+  },
+  {
+    "id": "hBP07-073",
+    "type": "Member",
+    "name": "ラプラス・ダークネス",
+    "hp": "170",
+    "imageFolder": "hPR/",
+    "color": ["purple"],
+    "grade": "1st",
+    "searchKeywords": ["ラプラス・ダークネス", "拉普拉斯·達克尼斯", "Laplus Darknesss"],
+    "skillType": "",
+    "versions": ["_P.png"],
+    "tags": ["JP", "秘密結社holoX", "射手", "歌"],
+    "effectType": "Collaboration"
+  },
+  {
+    "id": "hBP09-031",
+    "type": "Member",
+    "name": "白銀ノエル",
+    "hp": "220",
+    "imageFolder": "hPR/",
+    "color": ["green"],
+    "grade": "2nd",
+    "searchKeywords": ["白銀ノエル", "白銀諾艾爾", "Shirogane Noel"],
+    "skillType": "",
+    "versions": ["_P.png"],
+    "tags": ["JP", "3期生", "酒"],
+    "effectType": "Gift"
+  },
+  {
+    "id": "hBP09-086",
+    "type": "Member",
+    "name": "夏色まつり",
+    "hp": "170",
+    "imageFolder": "hPR/",
+    "color": ["yellow"],
+    "grade": "1st",
+    "searchKeywords": ["夏色まつり", "夏色祭", "Natsuiro Matsuri"],
+    "skillType": "",
+    "versions": ["_P.png"],
+    "tags": ["JP", "1期生", "射手"],
+    "effectType": "Bloom"
+  },
+  {
+    "id": "hEB01-025",
+    "type": "Support",
+    "name": "サマーパソコン",
+    "imageFolder": "hPR/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["item", "アイテム", "サマーパソコン", "夏季電腦"],
+    "versions": ["_P.png"],
+    "tags": ""
+  },
+  {
+    "id": "hEB01-026",
+    "type": "Support",
+    "name": "クマリン",
+    "imageFolder": "hPR/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["event", "イベント", "クマリン", "熊瑪琳"],
+    "versions": ["_P.png"],
+    "tags": ["LIMITED"]
+  },
+  {
+    "id": "hEB01-027",
+    "type": "Support",
+    "name": "サマーライブ",
+    "imageFolder": "hPR/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["event", "イベント", "サマーライブ", "Summer Live"],
+    "versions": ["_P.png"],
+    "tags": ["LIMITED"]
+  },
+  {
+    "id": "hEB01-028",
+    "type": "Support",
+    "name": "スイカ割り",
+    "imageFolder": "hPR/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["event", "イベント", "スイカ割り", "打西瓜"],
+    "versions": ["_P.png"],
+    "tags": ["LIMITED"]
+  },
+  {
+    "id": "hEB01-029",
+    "type": "Support",
+    "name": "スプラッシュシュート",
+    "imageFolder": "hPR/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["event", "イベント", "スプラッシュシュート", "水花射擊"],
+    "versions": ["_P.png"],
+    "tags": ""
+  },
+  {
+    "id": "hEB01-030",
+    "type": "Support",
+    "name": "ホロライブ・サマー",
+    "imageFolder": "hPR/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["event", "イベント", "ホロライブ・サマー", "Hololive・Summer"],
+    "versions": ["_P.png"],
+    "tags": ["LIMITED"]
+  },
+  {
+    "id": "hEB01-031",
+    "type": "Support",
+    "name": "水遊び",
+    "imageFolder": "hPR/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["event", "イベント", "水遊び", "玩水"],
+    "versions": ["_P.png"],
+    "tags": ""
+  },
+  {
+    "id": "hEB01-032",
+    "type": "Support",
+    "name": "STAR STAR☆T",
+    "imageFolder": "hPR/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["event", "イベント", "STAR STAR☆T"],
+    "versions": ["_P.png"],
+    "tags": ["LIMITED"]
+  },
+  {
+    "id": "hEB01-033",
+    "type": "Support",
+    "name": "ビーチボール",
+    "imageFolder": "hPR/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["tool", "ツール", "ビーチボール", "沙灘排球"],
+    "versions": ["_P.png"],
+    "tags": ""
+  },
+  {
+    "id": "hEB01-034",
+    "type": "Support",
+    "name": "なんでも爆解！",
+    "imageFolder": "hPR/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["tool", "ツール", "なんでも爆解！", "一炸解千愁"],
+    "versions": ["_P.png"],
+    "tags": ["小夜璃實驗室"]
   }
 ]

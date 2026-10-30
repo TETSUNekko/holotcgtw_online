@@ -18,10 +18,11 @@ const FOLDER_JSON = {
   hSD10: 'cardList_hSD10.json', hSD11: 'cardList_hSD11.json', hSD12: 'cardList_hSD12.json',
   hSD13: 'cardList_hSD13.json', hSD14: 'cardList_hSD14.json', hSD15: 'cardList_hSD15.json',
   hSD16: 'cardList_hSD16.json', hSD17: 'cardList_hSD17.json', hSD18: 'cardList_hSD18.json',
-  hSD19: 'cardList_hSD19.json',
+  hSD19: 'cardList_hSD19.json', hSD20: 'cardList_hSD20.json', hSD21: 'cardList_hSD21.json',
   hPR: 'cardList_PR.json', hBD24: 'cardList_hBD24.json', hYS01: 'cardList_hYS01.json',
   energy: 'cardList_hY.json', PC_Set: 'cardList_PC_Set.json',
-  '2025Live_Set': 'cardList_2025Live_Set.json', Twin_Wafer: 'cardList_TwinWafer.json',
+  '2025Live_Set': 'cardList_2025Live_Set.json', hCO02: 'cardList_hCO02.json', hCO03: 'cardList_hCO03.json',
+  Twin_Wafer: 'cardList_TwinWafer.json',
   hCS01: 'cardList_hCS01.json',
 };
 

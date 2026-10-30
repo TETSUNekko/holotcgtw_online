@@ -1131,83 +1131,6 @@
     "effectType": "Collaboration"
   },
   {
-    "id": "hBP01-104",
-    "type": "Support",
-    "name": "ふつうのパソコン",
-    "imageFolder": "hBP01/",
-    "color": "",
-    "grade": "",
-    "searchKeywords": ["item", "アイテム", "ふつうのパソコン", "普通的電腦", "出場至舞台"],
-    "versions": ["_C.png"],
-    "tags": ""
-  },
-  {
-    "id": "hBP01-107",
-    "type": "Support",
-    "name": "アンコール",
-    "imageFolder": "hBP01/",
-    "color": "",
-    "grade": "",
-    "searchKeywords": ["event", "イベント", "アンコール", "安可", "聲援"],
-    "versions": ["_C.png"],
-    "tags": ""
-  },
-  {
-    "id": "hBP01-118",
-    "type": "Support",
-    "name": "あん肝",
-    "imageFolder": "hBP01/",
-    "color": "",
-    "grade": "",
-    "searchKeywords": ["mascot", "マスコット", "あん肝", "安康肝", "HP+", "ときのそら", "時乃空", "Tokino Sora"],
-    "versions": ["_C.png"],
-    "tags": ""
-  },
-  {
-    "id": "hBP02-079",
-    "type": "Support",
-    "name": "爆発の魔法",
-    "imageFolder": "hBP02/",
-    "color": "",
-    "grade": "",
-    "searchKeywords": ["event", "イベント", "爆発の魔法", "爆炸的魔法", "一回合僅能使用1次", "特殊傷害"],
-    "versions": ["_U.png"],
-    "tags": ["魔法"]
-  },
-  {
-    "id": "hBP02-095",
-    "type": "Support",
-    "name": "ドクロくん",
-    "imageFolder": "hBP02/",
-    "color": "",
-    "grade": "",
-    "searchKeywords": ["mascot", "マスコット", "ドクロくん", "骷髏君", "中央位置限定", "藝能傷害+", "宝鐘マリン", "寶鐘瑪琳", "Houshou Marin"],
-    "versions": ["_C.png"],
-    "tags": ""
-  },
-  {
-    "id": "hBP03-088",
-    "type": "Support",
-    "name": "凸待ち",
-    "imageFolder": "hBP03/",
-    "color": "",
-    "grade": "",
-    "searchKeywords": ["event", "イベント", "凸待ち"],
-    "versions": ["_U.png"],
-    "tags": ["LIMITED"]
-  },
-  {
-    "id": "hBP04-105",
-    "type": "Support",
-    "name": "こよりの助手くん",
-    "imageFolder": "hBP04/",
-    "color": "",
-    "grade": "",
-    "searchKeywords": ["fan", "ファン", "こよりの助手くん", "小夜璃的助手君", "可佑理的助手君", "博衣こより", "博衣小夜璃", "博衣可佑理", "Hakui Koyori"],
-    "versions": ["_U.png"],
-    "tags": ["小夜璃實驗室"]
-  },
-  {
     "id": "hBP05-074",
     "type": "Support",
     "name": "フレンドリーパソコン",
@@ -1338,28 +1261,6 @@
     "searchKeywords": ["tool", "ツール", "なんでも爆解！", "一炸解千愁"],
     "versions": ["_U.png"],
     "tags": ["小夜璃實驗室"]
-  },
-  {
-    "id": "hSD01-018",
-    "type": "Support",
-    "name": "サブパソコン",
-    "imageFolder": "hSD01/",
-    "color": "",
-    "grade": "",
-    "searchKeywords": ["item", "アイテム", "サブパソコン", "備用電腦"],
-    "versions": ["_C.png"],
-    "tags": ""
-  },
-  {
-    "id": "hSD06-011",
-    "type": "Support",
-    "name": "ﾁｬｷ丸",
-    "imageFolder": "hSD06/",
-    "color": "",
-    "grade": "",
-    "searchKeywords": ["tool", "ツール", "ﾁｬｷ丸"],
-    "versions": ["_C.png"],
-    "tags": ""
   },
   {
     "id": "hBP01-104",

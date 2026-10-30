@@ -49,12 +49,16 @@ const SERIES_LIST = [
   { value: "hSD17", label: "hSD17　ライブスタートデッキ 星街" },
   { value: "hSD18", label: "hSD18　ライブスタートデッキ 森" },
   { value: "hSD19", label: "hSD19　ライブスタートデッキ 大空" },
+  { value: "hSD20", label: "hSD20　スタートデッキ アソビ★まわり隊！推し 百灯キョーコ" },
+  { value: "hSD21", label: "hSD21　スタートデッキ アソビ★まわり隊！推し 熱千めら" },
 
   { value: "hPR", label: "PRカード" },
   { value: "hBD24", label: "生日カード" },
   { value: "energy", label: "エールカード" },
   { value: "PC_Set", label: "オフィシャルホロカコレクション-PCセット-" },
   { value: "2025Live_Set", label: "オフィシャルホロカコレクション-2025ライブセット-" },
+  { value: "hCO02", label: "エクストリーマーカップ25-26 Final オフィシャルホロカコレクションA" },
+  { value: "hCO03", label: "エクストリーマーカップ25-26 Final オフィシャルホロカコレクションB" },
   { value: "hCS01", label: "hCS01　1st Anniversary Celebration Set (OFFICIAL SHOP限定)" },
   { value: "Twin_Wafer", label: "ツインウエハース" },
 ];
