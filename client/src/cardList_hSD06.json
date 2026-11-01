@@ -139,28 +139,6 @@
     "effectType": ""
   },
   {
-    "id": "hSD06-011",
-    "type": "Support",
-    "name": "ﾁｬｷ丸",
-    "imageFolder": "hSD06/",
-    "color": "",
-    "grade": "",
-    "searchKeywords": ["tool", "ツール", "ﾁｬｷ丸"],
-    "versions": ["_C.png"],
-    "tags": ""
-  },
-  {
-    "id": "hSD06-012",
-    "type": "Support",
-    "name": "ぽこべぇ",
-    "imageFolder": "hSD06/",
-    "color": "",
-    "grade": "",
-    "searchKeywords": ["mascot", "マスコット", "ぽこべぇ"],
-    "versions": ["_C.png"],
-    "tags": ""
-  },
-  {
     "id": "hBP01-048",
     "type": "Member",
     "name": "風真いろは",
@@ -187,6 +165,28 @@
     "versions": ["_U_2.png"],
     "tags": ["JP", "秘密結社holoX"],
     "effectType": "Gift"
+  },
+  {
+    "id": "hSD06-011",
+    "type": "Support",
+    "name": "ﾁｬｷ丸",
+    "imageFolder": "hSD06/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["tool", "ツール", "ﾁｬｷ丸"],
+    "versions": ["_C.png"],
+    "tags": ""
+  },
+  {
+    "id": "hSD06-012",
+    "type": "Support",
+    "name": "ぽこべぇ",
+    "imageFolder": "hSD06/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["mascot", "マスコット", "ぽこべぇ"],
+    "versions": ["_C.png"],
+    "tags": ""
   },
   {
     "id": "hBP01-104",

@@ -135,14 +135,36 @@
     "tags": ""
   },
   {
-    "id": "hSD14-010",
+    "id": "hBP01-104",
     "type": "Support",
-    "name": "holoAN",
+    "name": "ふつうのパソコン",
     "imageFolder": "hSD17/",
     "color": "",
     "grade": "",
-    "searchKeywords": ["staff", "スタッフ", "holoAN"],
+    "searchKeywords": ["item", "アイテム", "ふつうのパソコン", "普通的電腦", "出場至舞台"],
+    "versions": ["_05_C.png"],
+    "tags": ""
+  },
+  {
+    "id": "hBP02-077",
+    "type": "Support",
+    "name": "レトロパソコン",
+    "imageFolder": "hSD17/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["item", "アイテム", "レトロパソコン", "復古電腦", "返回手牌"],
     "versions": ["_C.png"],
+    "tags": ["LIMITED"]
+  },
+  {
+    "id": "hBP02-084",
+    "type": "Support",
+    "name": "みっころね24",
+    "imageFolder": "hSD17/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["event", "イベント", "みっころね24", "mikorone24", "丟擲", "骰子", "加入手牌"],
+    "versions": ["_U.png"],
     "tags": ["LIMITED"]
   },
   {
@@ -168,36 +190,14 @@
     "tags": ["LIMITED"]
   },
   {
-    "id": "hBP02-084",
+    "id": "hSD14-010",
     "type": "Support",
-    "name": "みっころね24",
+    "name": "holoAN",
     "imageFolder": "hSD17/",
     "color": "",
     "grade": "",
-    "searchKeywords": ["event", "イベント", "みっころね24", "mikorone24", "丟擲", "骰子", "加入手牌"],
-    "versions": ["_U.png"],
-    "tags": ["LIMITED"]
-  },
-  {
-    "id": "hBP02-077",
-    "type": "Support",
-    "name": "レトロパソコン",
-    "imageFolder": "hSD17/",
-    "color": "",
-    "grade": "",
-    "searchKeywords": ["item", "アイテム", "レトロパソコン", "復古電腦", "返回手牌"],
+    "searchKeywords": ["staff", "スタッフ", "holoAN"],
     "versions": ["_C.png"],
     "tags": ["LIMITED"]
-  },
-  {
-    "id": "hBP01-104",
-    "type": "Support",
-    "name": "ふつうのパソコン",
-    "imageFolder": "hSD17/",
-    "color": "",
-    "grade": "",
-    "searchKeywords": ["item", "アイテム", "ふつうのパソコン", "普通的電腦", "出場至舞台"],
-    "versions": ["_05_C.png"],
-    "tags": ""
   }
 ]

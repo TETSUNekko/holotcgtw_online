@@ -82,20 +82,6 @@
     "effectType": ""
   },
   {
-    "id": "hBP01-028",
-    "type": "Member",
-    "name": "IRyS",
-    "hp": "100",
-    "imageFolder": "hSD01/",
-    "color": ["white"],
-    "grade": "debut",
-    "searchKeywords": ["IRyS", "IRyS", "IRyS"],
-    "skillType": "",
-    "versions": ["_C.png"],
-    "tags": ["EN", "Promise", "歌"],
-    "effectType": ""
-  },
-  {
     "id": "hSD01-007",
     "type": "Member",
     "name": "IRyS",
@@ -220,6 +206,20 @@
     "versions": ["_U.png"],
     "tags": ["JP", "秘密結社holoX", "獸耳"],
     "effectType": "Collaboration"
+  },
+  {
+    "id": "hBP01-028",
+    "type": "Member",
+    "name": "IRyS",
+    "hp": "100",
+    "imageFolder": "hSD01/",
+    "color": ["white"],
+    "grade": "debut",
+    "searchKeywords": ["IRyS", "IRyS", "IRyS"],
+    "skillType": "",
+    "versions": ["_C.png"],
+    "tags": ["EN", "Promise", "歌"],
+    "effectType": ""
   },
   {
     "id": "hSD01-016",

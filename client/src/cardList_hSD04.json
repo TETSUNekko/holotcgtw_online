@@ -198,6 +198,17 @@
     "tags": ""
   },
   {
+    "id": "hBP01-106",
+    "type": "Support",
+    "name": "あとは任せた！",
+    "imageFolder": "hSD04/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["event", "イベント", "あとは任せた！", "接下來拜託了!", "交替"],
+    "versions": ["_U.png"],
+    "tags": ""
+  },
+  {
     "id": "hSD01-016",
     "type": "Support",
     "name": "春先のどか",
@@ -218,17 +229,6 @@
     "searchKeywords": ["staff", "スタッフ", "マネちゃん"],
     "versions": ["_C.png"],
     "tags": ["LIMITED"]
-  },
-  {
-    "id": "hBP01-106",
-    "type": "Support",
-    "name": "あとは任せた！",
-    "imageFolder": "hSD04/",
-    "color": "",
-    "grade": "",
-    "searchKeywords": ["event", "イベント", "あとは任せた！", "接下來拜託了!", "交替"],
-    "versions": ["_U.png"],
-    "tags": ""
   },
   {
     "id": "hSD01-019",

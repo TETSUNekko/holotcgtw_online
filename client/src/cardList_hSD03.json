@@ -186,6 +186,17 @@
     "tags": ""
   },
   {
+    "id": "hBP01-105",
+    "type": "Support",
+    "name": "ペンライト",
+    "imageFolder": "hSD03/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["item", "アイテム", "ペンライト", "應援棒", "聲援"],
+    "versions": ["_U.png"],
+    "tags": ["LIMITED"]
+  },
+  {
     "id": "hBP01-108",
     "type": "Support",
     "name": "じゃあ敵だね",
@@ -216,17 +227,6 @@
     "grade": "",
     "searchKeywords": ["staff", "スタッフ", "マネちゃん"],
     "versions": ["_C.png"],
-    "tags": ["LIMITED"]
-  },
-  {
-    "id": "hBP01-105",
-    "type": "Support",
-    "name": "ペンライト",
-    "imageFolder": "hSD03/",
-    "color": "",
-    "grade": "",
-    "searchKeywords": ["item", "アイテム", "ペンライト", "應援棒", "聲援"],
-    "versions": ["_U.png"],
     "tags": ["LIMITED"]
   },
   {

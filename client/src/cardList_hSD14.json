@@ -146,24 +146,24 @@
     "tags": ["白上的角色"]
   },
   {
-    "id": "hSD01-019",
+    "id": "hBP01-104",
     "type": "Support",
-    "name": "スゴイパソコン",
+    "name": "ふつうのパソコン",
     "imageFolder": "hSD14/",
     "color": "",
     "grade": "",
-    "searchKeywords": ["item", "アイテム", "スゴイパソコン", "厲害電腦"],
-    "versions": ["_C_02.png"],
-    "tags": ["LIMITED"]
+    "searchKeywords": ["item", "アイテム", "ふつうのパソコン", "普通的電腦", "出場至舞台"],
+    "versions": ["_02_C.png"],
+    "tags": ""
   },
   {
-    "id": "hSD01-017",
+    "id": "hBP02-077",
     "type": "Support",
-    "name": "マネちゃん",
+    "name": "レトロパソコン",
     "imageFolder": "hSD14/",
     "color": "",
     "grade": "",
-    "searchKeywords": ["staff", "スタッフ", "マネちゃん", "經紀醬"],
+    "searchKeywords": ["item", "アイテム", "レトロパソコン", "復古電腦", "返回手牌"],
     "versions": ["_C.png"],
     "tags": ["LIMITED"]
   },
@@ -179,25 +179,25 @@
     "tags": ["LIMITED"]
   },
   {
-    "id": "hBP02-077",
+    "id": "hSD01-017",
     "type": "Support",
-    "name": "レトロパソコン",
+    "name": "マネちゃん",
     "imageFolder": "hSD14/",
     "color": "",
     "grade": "",
-    "searchKeywords": ["item", "アイテム", "レトロパソコン", "復古電腦", "返回手牌"],
+    "searchKeywords": ["staff", "スタッフ", "マネちゃん", "經紀醬"],
     "versions": ["_C.png"],
     "tags": ["LIMITED"]
   },
   {
-    "id": "hBP01-104",
+    "id": "hSD01-019",
     "type": "Support",
-    "name": "ふつうのパソコン",
+    "name": "スゴイパソコン",
     "imageFolder": "hSD14/",
     "color": "",
     "grade": "",
-    "searchKeywords": ["item", "アイテム", "ふつうのパソコン", "普通的電腦", "出場至舞台"],
-    "versions": ["_02_C.png"],
-    "tags": ""
+    "searchKeywords": ["item", "アイテム", "スゴイパソコン", "厲害電腦"],
+    "versions": ["_C_02.png"],
+    "tags": ["LIMITED"]
   }
 ]

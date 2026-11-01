@@ -97,17 +97,6 @@
     "effectType": "Gift"
   },
   {
-    "id": "hBP01-108",
-    "type": "Support",
-    "name": "じゃあ敵だね",
-    "imageFolder": "hSD09/",
-    "color": "",
-    "grade": "",
-    "searchKeywords": ["event", "イベント", "じゃあ敵だね", "那就是敵人了", "交替"],
-    "versions": ["_U.png"],
-    "tags": ["LIMITED"]
-  },
-  {
     "id": "hBP02-028",
     "type": "Member",
     "name": "宝鐘マリン",
@@ -148,6 +137,17 @@
     "versions": ["_R.png"],
     "tags": ["JP", "3期生", "畫", "海"],
     "effectType": "Bloom"
+  },
+  {
+    "id": "hBP01-108",
+    "type": "Support",
+    "name": "じゃあ敵だね",
+    "imageFolder": "hSD09/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["event", "イベント", "じゃあ敵だね", "那就是敵人了", "交替"],
+    "versions": ["_U.png"],
+    "tags": ["LIMITED"]
   },
   {
     "id": "hBP02-084",

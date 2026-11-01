@@ -234,17 +234,23 @@ const decode = s => s
     }
   }
 
-  // 5. 排序：主推 → 角色 → 支援；主推/角色再依白綠紅藍紫黃，同色照卡號
-  //    支援卡不分顏色，維持官方列表順序
+  // 5. 排序：主推 → 角色 → 支援
+  //    補充包等：主推/角色再依白綠紅藍紫黃，同色照卡號；支援卡不分顏色，維持官方列表順序
+  //    起始牌組（hSD）：每類內本彈卡號在前、復刻卡在後，各自照卡號
+  //    （依顏色排的話，hSD21 會被藍色的復刻卡 hSD20-008～011 插在主推和本彈成員中間）
   const TORDER = ['Oshi', 'Member', 'Support'];
   const CORDER = ['white', 'green', 'red', 'blue', 'purple', 'yellow'];
+  const isDeck = SET.startsWith('hSD');
+  const own = c => (c.id.startsWith(SET + '-') ? 0 : 1);
   out.forEach((c, i) => c.__i = i);
   out.sort((a, b) =>
     TORDER.indexOf(a.type) - TORDER.indexOf(b.type) ||
-    (a.type === 'Support'
-      ? a.__i - b.__i
-      : CORDER.indexOf([].concat(a.color || [])[0]) - CORDER.indexOf([].concat(b.color || [])[0]) ||
-        a.id.localeCompare(b.id))
+    (isDeck
+      ? own(a) - own(b) || a.id.localeCompare(b.id)
+      : a.type === 'Support'
+        ? a.__i - b.__i
+        : CORDER.indexOf([].concat(a.color || [])[0]) - CORDER.indexOf([].concat(b.color || [])[0]) ||
+          a.id.localeCompare(b.id))
   );
   out.forEach(c => delete c.__i);
 

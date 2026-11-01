@@ -171,28 +171,6 @@
     "tags": []
   },
   {
-    "id": "hSD01-016",
-    "type": "Support",
-    "name": "春先のどか",
-    "imageFolder": "hSD10/",
-    "color": "",
-    "grade": "",
-    "searchKeywords": ["staff", "スタッフ", "春先のどか"],
-    "versions": ["_C.png"],
-    "tags": ["LIMITED"]
-  },
-  {
-    "id": "hSD01-017",
-    "type": "Support",
-    "name": "マネちゃん",
-    "imageFolder": "hSD10/",
-    "color": "",
-    "grade": "",
-    "searchKeywords": ["staff", "スタッフ", "マネちゃん"],
-    "versions": ["_C.png"],
-    "tags": ["LIMITED"]
-  },
-  {
     "id": "hBP01-104",
     "type": "Support",
     "name": "ふつうのパソコン",
@@ -211,6 +189,28 @@
     "color": "",
     "grade": "",
     "searchKeywords": ["item", "アイテム", "レトロパソコン", "復古電腦", "返回手牌"],
+    "versions": ["_C.png"],
+    "tags": ["LIMITED"]
+  },
+  {
+    "id": "hSD01-016",
+    "type": "Support",
+    "name": "春先のどか",
+    "imageFolder": "hSD10/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["staff", "スタッフ", "春先のどか"],
+    "versions": ["_C.png"],
+    "tags": ["LIMITED"]
+  },
+  {
+    "id": "hSD01-017",
+    "type": "Support",
+    "name": "マネちゃん",
+    "imageFolder": "hSD10/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["staff", "スタッフ", "マネちゃん"],
     "versions": ["_C.png"],
     "tags": ["LIMITED"]
   }

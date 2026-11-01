@@ -192,6 +192,34 @@
     "effectType": "Collaboration"
   },
   {
+    "id": "hBP04-050",
+    "type": "Member",
+    "name": "シオリ・ノヴェラ",
+    "hp": "110",
+    "imageFolder": "hSD12/",
+    "color": ["blue"],
+    "grade": "debut",
+    "searchKeywords": ["シオリ・ノヴェラ", "詩織·諾薇拉", "Shiori Novella"],
+    "skillType": "",
+    "versions": ["_02_C.png"],
+    "tags": ["EN", "Advent"],
+    "effectType": ""
+  },
+  {
+    "id": "hBP04-063",
+    "type": "Member",
+    "name": "古石ビジュ―",
+    "hp": "110",
+    "imageFolder": "hSD12/",
+    "color": ["purple"],
+    "grade": "debut",
+    "searchKeywords": ["古石ビジュ―", "古石碧珠", "Koseki Bijou"],
+    "skillType": "",
+    "versions": ["_02_C.png"],
+    "tags": ["EN", "Advent", "嬰兒"],
+    "effectType": "Gift"
+  },
+  {
     "id": "hSD12-015",
     "type": "Support",
     "name": "脱獄を果たした共犯者たち",
@@ -245,34 +273,6 @@
     "searchKeywords": ["item", "アイテム", "レトロパソコン", "復古電腦", "返回手牌"],
     "versions": ["_C.png"],
     "tags": ["LIMITED"]
-  },
-  {
-    "id": "hBP04-050",
-    "type": "Member",
-    "name": "シオリ・ノヴェラ",
-    "hp": "110",
-    "imageFolder": "hSD12/",
-    "color": ["blue"],
-    "grade": "debut",
-    "searchKeywords": ["シオリ・ノヴェラ", "詩織·諾薇拉", "Shiori Novella"],
-    "skillType": "",
-    "versions": ["_02_C.png"],
-    "tags": ["EN", "Advent"],
-    "effectType": ""
-  },
-  {
-    "id": "hBP04-063",
-    "type": "Member",
-    "name": "古石ビジュ―",
-    "hp": "110",
-    "imageFolder": "hSD12/",
-    "color": ["purple"],
-    "grade": "debut",
-    "searchKeywords": ["古石ビジュ―", "古石碧珠", "Koseki Bijou"],
-    "skillType": "",
-    "versions": ["_02_C.png"],
-    "tags": ["EN", "Advent", "嬰兒"],
-    "effectType": "Gift"
   },
   {
     "id": "hBP04-096",

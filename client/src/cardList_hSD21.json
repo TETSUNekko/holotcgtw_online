@@ -13,62 +13,6 @@
     "grade": ""
   },
   {
-    "id": "hSD20-008",
-    "type": "Member",
-    "name": "宙科そぴあ",
-    "hp": "120",
-    "imageFolder": "hSD21/",
-    "color": ["blue"],
-    "grade": "debut",
-    "searchKeywords": ["宙科そぴあ", "宙科索菲婭", "Sorashina Sopia"],
-    "skillType": "",
-    "versions": ["_C.png"],
-    "tags": ["玩樂★巡遊隊！"],
-    "effectType": "Gift"
-  },
-  {
-    "id": "hSD20-009",
-    "type": "Member",
-    "name": "宙科そぴあ",
-    "hp": "160",
-    "imageFolder": "hSD21/",
-    "color": ["blue"],
-    "grade": "1st",
-    "searchKeywords": ["宙科そぴあ", "宙科索菲婭", "Sorashina Sopia"],
-    "skillType": "",
-    "versions": ["_U.png"],
-    "tags": ["玩樂★巡遊隊！"],
-    "effectType": "Bloom"
-  },
-  {
-    "id": "hSD20-010",
-    "type": "Member",
-    "name": "宙科そぴあ",
-    "hp": "130",
-    "imageFolder": "hSD21/",
-    "color": ["blue"],
-    "grade": "1st",
-    "searchKeywords": ["宙科そぴあ", "宙科索菲婭", "Sorashina Sopia"],
-    "skillType": "",
-    "versions": ["_R.png"],
-    "tags": ["玩樂★巡遊隊！"],
-    "effectType": "Bloom"
-  },
-  {
-    "id": "hSD20-011",
-    "type": "Member",
-    "name": "宙科そぴあ",
-    "hp": "200",
-    "imageFolder": "hSD21/",
-    "color": ["blue"],
-    "grade": "2nd",
-    "searchKeywords": ["宙科そぴあ", "宙科索菲婭", "Sorashina Sopia"],
-    "skillType": "",
-    "versions": ["_RR.png"],
-    "tags": ["玩樂★巡遊隊！"],
-    "effectType": "Collaboration"
-  },
-  {
     "id": "hSD21-002",
     "type": "Member",
     "name": "熱千めら",
@@ -153,6 +97,73 @@
     "effectType": "Gift"
   },
   {
+    "id": "hSD20-008",
+    "type": "Member",
+    "name": "宙科そぴあ",
+    "hp": "120",
+    "imageFolder": "hSD21/",
+    "color": ["blue"],
+    "grade": "debut",
+    "searchKeywords": ["宙科そぴあ", "宙科索菲婭", "Sorashina Sopia"],
+    "skillType": "",
+    "versions": ["_C.png"],
+    "tags": ["玩樂★巡遊隊！"],
+    "effectType": "Gift"
+  },
+  {
+    "id": "hSD20-009",
+    "type": "Member",
+    "name": "宙科そぴあ",
+    "hp": "160",
+    "imageFolder": "hSD21/",
+    "color": ["blue"],
+    "grade": "1st",
+    "searchKeywords": ["宙科そぴあ", "宙科索菲婭", "Sorashina Sopia"],
+    "skillType": "",
+    "versions": ["_U.png"],
+    "tags": ["玩樂★巡遊隊！"],
+    "effectType": "Bloom"
+  },
+  {
+    "id": "hSD20-010",
+    "type": "Member",
+    "name": "宙科そぴあ",
+    "hp": "130",
+    "imageFolder": "hSD21/",
+    "color": ["blue"],
+    "grade": "1st",
+    "searchKeywords": ["宙科そぴあ", "宙科索菲婭", "Sorashina Sopia"],
+    "skillType": "",
+    "versions": ["_R.png"],
+    "tags": ["玩樂★巡遊隊！"],
+    "effectType": "Bloom"
+  },
+  {
+    "id": "hSD20-011",
+    "type": "Member",
+    "name": "宙科そぴあ",
+    "hp": "200",
+    "imageFolder": "hSD21/",
+    "color": ["blue"],
+    "grade": "2nd",
+    "searchKeywords": ["宙科そぴあ", "宙科索菲婭", "Sorashina Sopia"],
+    "skillType": "",
+    "versions": ["_RR.png"],
+    "tags": ["玩樂★巡遊隊！"],
+    "effectType": "Collaboration"
+  },
+  {
+    "id": "hSD21-008",
+    "type": "Support",
+    "name": "熱千めらの拍子木",
+    "imageFolder": "hSD21/",
+    "color": "",
+    "grade": "",
+    "searchKeywords": ["tool", "ツール", "熱千めらの拍子木", "熱千玫拉的拍子木"],
+    "versions": ["_U.png"],
+    "tags": ""
+  },
+  {
     "id": "hBP01-104",
     "type": "Support",
     "name": "ふつうのパソコン",
@@ -217,16 +228,5 @@
     "searchKeywords": ["event", "イベント", "ぐるぐるTIME！", "轉圈圈TIME！"],
     "versions": ["_U.png"],
     "tags": ["LIMITED"]
-  },
-  {
-    "id": "hSD21-008",
-    "type": "Support",
-    "name": "熱千めらの拍子木",
-    "imageFolder": "hSD21/",
-    "color": "",
-    "grade": "",
-    "searchKeywords": ["tool", "ツール", "熱千めらの拍子木", "熱千玫拉的拍子木"],
-    "versions": ["_U.png"],
-    "tags": ""
   }
 ]
