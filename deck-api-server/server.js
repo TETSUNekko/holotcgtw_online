@@ -54,6 +54,18 @@ try {
 // 卡圖 CDN（Cloudflare R2）
 const CARDS_CDN = process.env.CARDS_CDN || 'https://pub-9e063c0641df4849b7460815c8ee4a6d.r2.dev/cards';
 console.log('[Export] Using CARDS_CDN:', CARDS_CDN);
+// R2 沒有的卡圖改讀主站的 webp（主站看得到的卡，這裡一定有）。
+// 沿用原彈卡圖的復刻卡、後來補的平行版／PR 卡常常只有 webp 沒傳上 R2，匯出時會變成「?」
+const SITE_WEBP = process.env.SITE_WEBP || 'https://tetsunekko.github.io/holotcgtw/webpcards';
+
+async function loadCardImage(entry) {
+  const name = `${entry.folder}/${entry.id}${entry.version}`;
+  try {
+    return await loadImage(`${CARDS_CDN}/${name}.png`);
+  } catch {
+    return loadImage(`${SITE_WEBP}/${name}.webp`).catch(() => null);
+  }
+}
 
 /* ===================== 4) PostgreSQL 連線 ===================== */
 if (!process.env.DATABASE_URL) {
@@ -335,7 +347,7 @@ async function renderDeckImage({ oshi = [], deck = [], energy = [] }) {
       const entry = parseKey(oshi[i].key);
       if (!entry) continue;
       drawJobs.push({
-        url: `${CARDS_CDN}/${entry.folder}/${entry.id}${entry.version}.png`,
+        entry,
         x: 40 * SCALE, y: oshiTop + i * (cardH + gap), w: cardW, h: cardH, count: oshi[i].count || 1,
       });
     }
@@ -346,7 +358,7 @@ async function renderDeckImage({ oshi = [], deck = [], energy = [] }) {
       if (!entry) continue;
       const col = i % mainCols, row = Math.floor(i / mainCols);
       drawJobs.push({
-        url: `${CARDS_CDN}/${entry.folder}/${entry.id}${entry.version}.png`,
+        entry,
         x: 300 * SCALE + col * (cardW + gap), y: 60 * SCALE + row * (cardH + gap),
         w: cardW, h: cardH, count: deck[i].count || 1,
       });
@@ -359,7 +371,7 @@ async function renderDeckImage({ oshi = [], deck = [], energy = [] }) {
       if (!entry) continue;
       const col = i % 2, row = Math.floor(i / 2);
       drawJobs.push({
-        url: `${CARDS_CDN}/${entry.folder}/${entry.id}${entry.version}.png`,
+        entry,
         x: 40 * SCALE + col * (smallW + gap), y: energyBaseY + 40 * SCALE + row * (smallH + gap),
         w: smallW, h: smallH, count: energy[i].count || 1,
       });
@@ -369,7 +381,7 @@ async function renderDeckImage({ oshi = [], deck = [], energy = [] }) {
     const bgUrl = `${CARDS_CDN}/backgrounds/wood.jpg`;
     const [bgResult, ...imgResults] = await Promise.all([
       loadImage(bgUrl).catch(() => null),
-      ...drawJobs.map(job => loadImage(job.url).catch(() => null)),
+      ...drawJobs.map(job => loadCardImage(job.entry)),
     ]);
 
     // 畫背景

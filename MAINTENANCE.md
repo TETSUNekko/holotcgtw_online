@@ -318,6 +318,33 @@ hSD01～hSD21 已全部重排（其中 hSD02／07／08／13 原本就符合）�
 `fetch-set.cjs` 產出時已直接照這個規則排序（步驟 5），新彈不需要再手動排。
 `cardList_hEB01.json` 已於 2026-08-18 補排完成。
 
+### ⚠️ 匯出圖片用的 R2 卡圖要另外上傳（2026-11-01 發現）
+
+後端匯出牌組圖（`/export-deck`、分享頁 OG 圖）**不讀網站的 webp**，而是讀 Cloudflare R2：
+`{CARDS_CDN}/{本站資料夾}/{卡號}{版本}.png`（[server.js](deck-api-server/server.js) 的 `CARDS_CDN`）。
+R2 上缺圖時，匯出的牌組圖該格原本會變成「?」。
+
+**2026-11-01 起後端會自動退回讀主站的 webp**（`loadCardImage()`，網址可用環境變數 `SITE_WEBP` 覆蓋），
+主站看得到的卡一定匯出得出來，R2 缺圖不再出現「?」。R2 仍是首選來源（PNG 原圖畫質較好），
+所以下面的上傳流程照做會更好，但漏傳不會壞。
+
+最容易漏的是**沿用原彈卡圖的復刻卡**：`fetch-set.cjs` 提示要把 webp 複製進本彈資料夾，
+但 `new_cards/` 裡不會有對應的 PNG，只上傳 `new_cards/` 就會漏掉。
+例如 hSD21 收錄的 `hSD20-008_C`，R2 要有 `hSD21/hSD20-008_C.png`，不是只有 `hSD20/` 那張。
+
+2026-11-01 全站比對：3149 張卡圖中 R2 缺 351 張（hPR 195、hEB01 93、hBD24 27、energy 14、
+hSD21 10、hCS01 5、hBP05 3、hSD20 3、hBP07 1），從官方 CDN 補齊後交由維護者上傳。
+
+**新增卡圖後檢查 R2 缺圖**（列出「本站有 webp、R2 沒有 PNG」的檔案）：
+```bash
+CDN=https://pub-9e063c0641df4849b7460815c8ee4a6d.r2.dev/cards
+cd client/public/webpcards
+find . -name "*.webp" -not -path "*-trans/*" | sed 's#^\./##;s/\.webp$//' |
+  xargs -P 24 -I{} sh -c 'c=$(curl -s -o /dev/null -I -w "%{http_code}" "'$CDN'/{}.png"); [ "$c" != 200 ] && echo "{}"'
+```
+補圖時從官方 CDN 抓原始 PNG（同一張圖可能在 `本站資料夾`、`卡號前綴資料夾` 或其他商品資料夾，
+找不到時用上方「查某張卡屬於哪個商品資料夾」的指令），依 `本站資料夾/檔名.png` 的結構上傳。
+
 ### 收工前跑一次健康檢查
 用本文件最後的健檢腳本，兩個數字都要是 0：
 - 孤兒圖片（有圖無索引）→ 忘了跑 `build:index`
