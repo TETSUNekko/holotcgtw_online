@@ -22,6 +22,14 @@ async function trim(cache) {
   await Promise.all(keys.slice(0, keys.length - MAX_ENTRIES).map(k => cache.delete(k)));
 }
 
+// trim 要列出整個快取，不能每張圖都跑：卡片列表一路捲下去會連發上千次，
+// 每次產生 600 個 Request 物件，單一分頁記憶體會被吃到 1 GB 以上。改成最多每 5 秒一次。
+let trimTimer = null;
+function scheduleTrim(cache) {
+  if (trimTimer) return;
+  trimTimer = setTimeout(() => { trimTimer = null; trim(cache); }, 5000);
+}
+
 self.addEventListener("fetch", (e) => {
   const url = new URL(e.request.url);
   if (e.request.method !== "GET") return;
@@ -34,7 +42,8 @@ self.addEventListener("fetch", (e) => {
     if (hit) return hit;
     try {
       const res = await fetch(e.request);
-      if (res.ok) { await cache.put(e.request, res.clone()); trim(cache); }
+      // 先把圖交給頁面，寫快取放背景做，不讓每張圖都等寫完才顯示
+      if (res.ok) e.waitUntil(cache.put(e.request, res.clone()).then(() => scheduleTrim(cache)).catch(() => {}));
       return res;
     } catch (err) {
       // 離線且沒快取：讓瀏覽器顯示破圖，不要整頁掛掉
