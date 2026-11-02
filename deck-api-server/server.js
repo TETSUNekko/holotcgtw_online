@@ -59,12 +59,16 @@ console.log('[Export] Using CARDS_CDN:', CARDS_CDN);
 const SITE_WEBP = process.env.SITE_WEBP || 'https://tetsunekko.github.io/holotcgtw/webpcards';
 
 async function loadCardImage(entry) {
-  const name = `${entry.folder}/${entry.id}${entry.version}`;
-  try {
-    return await loadImage(`${CARDS_CDN}/${name}.png`);
-  } catch {
-    return loadImage(`${SITE_WEBP}/${name}.webp`).catch(() => null);
+  const file = `${entry.id}${entry.version}`;
+  const sources = [`${CARDS_CDN}/${entry.folder}/${file}.png`];
+  // 復刻卡（如 hSD21 收錄的 hSD20-008_C）用的是原彈卡圖，R2 只在卡號前綴資料夾有一份，不必重複上傳
+  const origin = entry.id.split('-')[0];
+  if (origin !== entry.folder) sources.push(`${CARDS_CDN}/${origin}/${file}.png`);
+  sources.push(`${SITE_WEBP}/${entry.folder}/${file}.webp`);
+  for (const url of sources) {
+    try { return await loadImage(url); } catch {}
   }
+  return null;
 }
 
 /* ===================== 4) PostgreSQL 連線 ===================== */
