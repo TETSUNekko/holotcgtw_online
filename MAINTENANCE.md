@@ -1,5 +1,16 @@
 # HoloTCG Online 維護備忘錄
 
+## ⚠️ 待辦：Railway 試用期已到期，後端無法部署新版（2026-11-02 發現）
+
+`railway redeploy --from-source` 回應 `Your trial has expired. Please select a plan to continue using Railway.`
+正式站最後一次部署停在 **2026-09-20 12:52**，之後 10/30～11/2 的 push 都**沒有觸發自動部署**（不是 GitHub 連結壞掉，repo 連結正確）。
+目前線上跑的還是 9/20 版的 `server.js`，所以匯出牌組圖仍會把 R2 缺圖畫成「?」（`loadCardImage()` 的 fallback 尚未上線）。
+
+- 網站公告（`cardsConfig.jsx` 的 `changelog` 11/2 那條）已先告知玩家「匯出圖部分卡片顯示 ?」的已知問題
+- 待維護者決定：升級 Railway 付費方案，或搬到其他平台。**牌組代碼資料庫（Deck Codes Database）也在 Railway 上，處理前先備份**
+- 解決後：`cd deck-api-server && railway redeploy --from-source -y` → 確認 `/healthz` 的 uptime 歸零 → 匯出一副 hSD21 牌組確認沒有「?」→ 公告改成「已修正」並刪掉這段
+- 本機 Railway CLI 已 `railway link` 到 Deck API Server / production / deck-api-server
+
 ## ⚠️ 待辦：Repo 整併收尾（2026-09-14 建立）
 
 本專案原本的 GitHub repo `deck-api-server` 已改名為 **`holotcgtw_online`**
