@@ -1,15 +1,19 @@
 # HoloTCG Online 維護備忘錄
 
-## ⚠️ 待辦：Railway 試用期已到期，後端無法部署新版（2026-11-02 發現）
+## 🚂 Railway 後端部署（2026-11-18 事故紀錄）
 
-`railway redeploy --from-source` 回應 `Your trial has expired. Please select a plan to continue using Railway.`
-正式站最後一次部署停在 **2026-09-20 12:52**，之後 10/30～11/2 的 push 都**沒有觸發自動部署**（不是 GitHub 連結壞掉，repo 連結正確）。
-目前線上跑的還是 9/20 版的 `server.js`，所以匯出牌組圖仍會把 R2 缺圖畫成「?」（`loadCardImage()` 的 fallback 尚未上線）。
+**事故**：Railway 試用期約 9/20 到期，之後 push **不會**觸發部署也不會報錯，正式站默默停在 9/20 版，
+10/30～11/2 的後端修正（匯出圖缺圖 fallback）因此沒上線。維護者處理好方案後已於 2026-11-18 部署 `5f566efd`。
 
-- 網站公告（`cardsConfig.jsx` 的 `changelog` 11/2 那條）已先告知玩家「匯出圖部分卡片顯示 ?」的已知問題
-- 待維護者決定：升級 Railway 付費方案，或搬到其他平台。**牌組代碼資料庫（Deck Codes Database）也在 Railway 上，處理前先備份**
-- 解決後：`cd deck-api-server && railway redeploy --from-source -y` → 確認 `/healthz` 的 uptime 歸零 → 匯出一副 hSD21 牌組確認沒有「?」→ 公告改成「已修正」並刪掉這段
-- 本機 Railway CLI 已 `railway link` 到 Deck API Server / production / deck-api-server
+**檢查後端跑的是不是最新版**（改了 `server.js` 後務必確認）：
+- `curl https://deck-api-server-production.up.railway.app/healthz` → `uptime`（秒）應該是 push 之後才開始算
+- `cd deck-api-server && railway deployment list` 看最新一筆的時間；`--json` 可看 `commitHash`
+
+**手動部署最新 commit**：`cd deck-api-server && railway redeploy --from-source -y`
+⚠️ 不加 `--from-source` 的 `railway redeploy`（或後台的 Redeploy 按鈕）只會**重跑上一次部署的舊 commit**，
+11/11 那次就是這樣，部署成功但跑的還是 9/20 的程式。
+
+本機 Railway CLI 已 `railway link` 到 Deck API Server / production / deck-api-server。
 
 ## ⚠️ 待辦：Repo 整併收尾（2026-09-14 建立）
 
