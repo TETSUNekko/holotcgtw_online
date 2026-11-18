@@ -349,21 +349,25 @@ R2 上缺圖時，匯出的牌組圖該格原本會變成「?」。
 例如 hSD21 收錄的 `hSD20-008_C`，會直接用 R2 上 `hSD20/hSD20-008_C.png` 那張，
 不必再傳一份到 `hSD21/`。
 
-2026-11-02 全站比對：3149 張卡圖中 R2 缺 351 張（hPR 195、hEB01 93、hBD24 27、energy 14、
-hSD21 10、hCS01 5、hBP05 3、hSD20 3、hBP07 1）。其中 12 張是復刻卡，已由 ② 自動對到原彈 PNG；
-其餘 339 張逐一比對過內容，**都是獨立卡圖（PR 版、`_SR_02` 異圖等），不是重複檔**，
-目前靠 ③ 的 webp 顯示，要 PNG 畫質才需要另外上傳（之前抓好的 PNG 不在 repo 裡，需重新下載）。
-檢查指令列出的缺圖會包含這 12 張復刻卡，可略過「本站資料夾 ≠ 卡號前綴」的項目。
+**2026-11-18 已補齊**：原本缺的 351 張中，12 張復刻卡由 ② 自動對到原彈 PNG（不上傳）；
+其餘 339 張（hPR 195、hEB01 93、hBD24 27、energy 14、hCS01 5、hBP05 3、hBP07 1、hSD21 1）
+都是獨立卡圖（PR 版、`_SR_02` 異圖等），從官方 CDN 下載原圖並逐張比對過本站 webp 後上傳。
+現在全站 3149 張在 R2 上都有 PNG（不含 12 張靠 ② 的復刻卡）。
 
-**新增卡圖後檢查 R2 缺圖**（列出「本站有 webp、R2 沒有 PNG」的檔案）：
+**新增卡圖後補 R2**（一鍵找缺圖＋下載）：
 ```bash
-CDN=https://pub-9e063c0641df4849b7460815c8ee4a6d.r2.dev/cards
-cd client/public/webpcards
-find . -name "*.webp" -not -path "*-trans/*" | sed 's#^\./##;s/\.webp$//' |
-  xargs -P 24 -I{} sh -c 'c=$(curl -s -o /dev/null -I -w "%{http_code}" "'$CDN'/{}.png"); [ "$c" != 200 ] && echo "{}"'
+node fetch-r2-missing.cjs
 ```
-補圖時從官方 CDN 抓原始 PNG（同一張圖可能在 `本站資料夾`、`卡號前綴資料夾` 或其他商品資料夾，
-找不到時用上方「查某張卡屬於哪個商品資料夾」的指令），依 `本站資料夾/檔名.png` 的結構上傳。
+- 比對全站 webp 與 R2，扣掉 ② 能對到的復刻卡，從官方依「同資料夾 → 卡號前綴資料夾 → 官方搜尋同檔名」找原圖
+- 下載到 `r2upload/{本站資料夾}/{檔名}.png`（已在 .gitignore），官方找不到的列在 `r2upload/notfound.txt`
+
+**上傳**（bucket `holotcg-cards`，路徑前綴 `cards/`；首次使用先 `npx wrangler login`，用 a29861171 的 Cloudflare 帳號）：
+```bash
+cd r2upload
+find . -name "*.png" | sed 's#^\./##' | xargs -P 8 -I{} sh -c \
+  'npx -y wrangler r2 object put "holotcg-cards/cards/{}" --file "{}" --content-type image/png --remote >/dev/null 2>&1 && echo "OK {}" || echo "FAIL {}"'
+```
+上傳完再跑一次 `node fetch-r2-missing.cjs`，應顯示「R2 實際缺 0 張」，之後可刪掉 `r2upload/`。
 
 ### 收工前跑一次健康檢查
 用本文件最後的健檢腳本，兩個數字都要是 0：
