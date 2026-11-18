@@ -4,6 +4,7 @@
 
 **事故**：Railway 試用期約 9/20 到期，之後 push **不會**觸發部署也不會報錯，正式站默默停在 9/20 版，
 10/30～11/2 的後端修正（匯出圖缺圖 fallback）因此沒上線。維護者處理好方案後已於 2026-11-18 部署 `5f566efd`。
+處理好之後 push 已恢復自動部署（11/18 push `917e54e0` 後自動部署成功）。
 
 **檢查後端跑的是不是最新版**（改了 `server.js` 後務必確認）：
 - `curl https://deck-api-server-production.up.railway.app/healthz` → `uptime`（秒）應該是 push 之後才開始算
